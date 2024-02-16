@@ -5,11 +5,10 @@ import Link from "next/link";
 import { useRef, useEffect } from "react";
 import Logo from "./shared/Logo";
 interface Props {
-  openModal: () => void;
   onClose: () => void;
   isOpen?: boolean;
 }
-export default function MobileSidebar({ openModal, onClose, isOpen }: Props) {
+export default function MobileSidebar({ onClose, isOpen }: Props) {
   const mainRef = useRef<HTMLElement | null>(null);
   const handleClickOutside = (event: any) => {
     if (mainRef.current && !mainRef.current.contains(event.target)) {
@@ -28,8 +27,20 @@ export default function MobileSidebar({ openModal, onClose, isOpen }: Props) {
       label: "Products",
     },
     {
-      href: "#testimonials",
-      label: "Testimonials",
+      href: "#Use Cases",
+      label: "Use Cases",
+    },
+    {
+      href: "#Pricing",
+      label: "Pricing",
+    },
+    {
+      href: "#Resources",
+      label: "Resources",
+    },
+    {
+      href: "#Company",
+      label: "Company",
     },
     {
       href: "#faq",
@@ -42,24 +53,22 @@ export default function MobileSidebar({ openModal, onClose, isOpen }: Props) {
       ref={mainRef}
       className={`${
         isOpen ? "w-[300px]" : "w-0"
-      } overflow-hidden bg-[#101010] fixed right-0 top-0 bottom-0 h-screen shadow-2xl z-[9999999] transition-[width] duration-500`}>
+      } overflow-hidden bg-white fixed right-0 top-0 bottom-0 h-screen shadow-2xl z-[9999999] transition-[width] duration-500`}>
       <div className="pl-8 flex flex-col justify-between pt-6 pb-10 px-4 h-full">
         <div className="flex items-center justify-between w-full">
-          <Logo />
-          <div className="w-10 grid place-content-center ml-6 md:hidden">
+          <Logo isMobile />
+          <div className="w-10 grid place-content-center ml-6">
             <div
-              className="flex flex-col items-end justify-center hover:bg-neutral-200/20 rounded-md transition duration-100 p-2 space-y-[7px] cursor-pointer  group"
+              className="flex flex-col items-end justify-center rounded-md transition duration-100 p-2 space-y-[7px] cursor-pointer  group"
               onClick={onClose}>
               <span
-                className={`w-5 relative h-[2px] bg-neutral-300 block transition rounded-full duration-[.3s] ${
+                className={`w-5 relative h-[2px] bg-[#8E93A4] block transition rounded-full duration-[.3s] ${
                   isOpen && "rotate-[135deg] translate-y-[9px] w-5"
                 }`}></span>
               <span
-                className={`w-4 relative h-[2px] bg-neutral-300 transition  rounded-full duration-[.4s] opacity-100 ${
-                  isOpen && "!opacity-0 invisible"
-                } `}></span>
+                className={`w-4 relative h-[2px] bg-[#8E93A4] transition  rounded-full duration-[.4s] opacity-100 ${isOpen && "!opacity-0 invisible"} `}></span>
               <span
-                className={`w-5 relative h-[2px] bg-neutral-300 rounded-full transition duration-[.3s] ${
+                className={`w-5 relative h-[2px] bg-[#8E93A4] rounded-full transition duration-[.3s] ${
                   isOpen && "-rotate-[135deg] -translate-y-[9px] w-5"
                 }`}></span>
             </div>
@@ -75,14 +84,16 @@ export default function MobileSidebar({ openModal, onClose, isOpen }: Props) {
             </Link>
           ))}
         </div>
-        <button
-          onClick={() => {
-            onClose();
-            openModal();
-          }}
-          className="px-8 py-3 rounded-full font-semibold uppercase text-sm bg-[#EDF49B] text-[#101010]">
-          Login
-        </button>
+        <div className="flex gap-x-5">
+          <div className="flex gap-x-4">
+            <Link href="/login">
+              <button className="ring-1 ring-inset ring-[#4D4D77] py-3 px-8 rounded-xl whitespace-nowrap">Log in</button>
+            </Link>
+            <Link href="/signup">
+              <button className="bg-gradient-to-r from-[#c04cff] to-[#6035ff] text-white py-3 px-8 rounded-xl whitespace-nowrap">Sign up</button>
+            </Link>
+          </div>
+        </div>
       </div>
     </nav>
   );

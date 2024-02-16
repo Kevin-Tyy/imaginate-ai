@@ -3,11 +3,18 @@ import Link from "next/link";
 import React from "react";
 interface Props {
   isLight?: boolean;
+  isMobile?: boolean;
 }
-export default function Logo({ isLight }: Props) {
+export default function Logo({ isLight, isMobile }: Props) {
   return (
-    <Link href="/">
-      <Image src={isLight ? "/logo/imaginate-light.svg" : "/logo/genius-ai.svg"} alt="make-my-policy.co" height={100} width={100} className="w-44 min-w-44" />
+    <Link href="/" className={``}>
+      <Image
+        src={isLight ? "/logo/imaginate-light.svg" : "/logo/imaginate.svg"}
+        alt="imaginate"
+        height={80}
+        width={80}
+        className={`w-44 max-h-16 min-w-44 ${!isLight && "w-32 min-w-32"} ${isMobile && "w-28 min-w-28"}`}
+      />
     </Link>
   );
 }
