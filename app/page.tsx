@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
-import { dummyAiImages, languages, sponsors } from "./components/constants/data";
 import { BsArrowRight } from "react-icons/bs";
+import { dummyAiImages, languages, sponsors } from "./(site)/home/components/constants/data";
 
 export default function page() {
   return (
