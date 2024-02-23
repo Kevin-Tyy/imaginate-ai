@@ -7,39 +7,49 @@ import { BsArrowRight } from "react-icons/bs";
 export default function page() {
   return (
     <div>
-      <div className="h-screen relative">
-        {/* <Image src="/backgrounds/homepage-hero.svg" alt="" width={1920} height={1900} className="absolute w-full h-full inset-0" /> */}
-        <div className="h-full flex flex-col justify-center items-center relative z-[1]">
-          <div className="space-y-4">
-            <h1 className="text-[55px] capitalize font-semibold max-w-2xl text-center text-[#191D39]">
-              Turn your text into videos in <span className="text-primary-purple">minutes</span>
-            </h1>
-            <p className="text-[#191D39] max-w-xl text-center leading-loose mx-auto">
-              Lorem ipsum dolor sit amet consectetur. Cursus commodo vitae bibendum in.
-            </p>
-            <div className="flex justify-center  gap-x-4">
-              <Link href="#">
-                <button className="bg-gradient-to-r from-[#c04cff] to-[#6035ff] text-white py-4 px-10 rounded-xl ">Create Free AI Video</button>
-              </Link>
-              <Link href="#">
-                <button className="ring-1 ring-inset ring-[#4D4D77] py-4 px-10 rounded-xl ">Get a Demo</button>
-              </Link>
+      <div className="relative">
+        <div className="w-[450px] h-[200px] rounded-full absolute top-0 right-0 bg-gradient-to-r from-[#4E31FF] to-[#3669EC00] blur-[200px]" />
+        <div className="w-[450px] h-[200px] rounded-full absolute top-1/2 left-20 bg-gradient-to-r from-[#4E31FF] to-[#3669EC] blur-[200px]" />
+        <div className="mix-blend-lighten">
+          <Image src="/backgrounds/homepage-hero.svg" alt="" width={2920} height={1900} className="absolute w-full min-w-screen h-full inset-0 object-cover" />
+        </div>
+        <div className="relative flex flex-col min-h-screen pt-32">
+          <div className="h-full flex flex-col justify-center items-center relative z-[1]">
+            <div className="space-y-8 relative z-[1]">
+              <h1 className="text-[60px] capitalize font-semibold max-w-2xl text-center text-[#191D39] mx-auto">
+                Turn your text into videos in <span className="text-primary-purple font-black">minutes</span>
+              </h1>
+              <p className="text-[#191D39] max-w-xl text-center leading-loose mx-auto">
+                Lorem ipsum dolor sit amet consectetur. Cursus commodo vitae bibendum in.
+              </p>
+              <div className="flex justify-center  gap-x-4">
+                <Link href="#">
+                  <button className="bg-gradient-to-r from-[#c04cff] to-[#6035ff] text-white py-4 px-10 rounded-xl ">Create Free AI Video</button>
+                </Link>
+                <Link href="#">
+                  <button className="ring-1 ring-inset ring-[#4D4D77] py-4 px-10 rounded-xl ">Get a Demo</button>
+                </Link>
+              </div>
+              <div className="flex gap-x-5 !mt-8">
+                <div className="flex items-center gap-2 px-4 py-3 bg-white text-[#191D39] rounded-lg hover:shadow-2xl shadow-[#80808085] cursor-pointer transition duration-500">
+                  <Image src="/icons/check.svg" alt="check" width={20} height={20} /> <span className="">120+ languages</span>
+                </div>
+                <div className="flex items-center gap-2 px-4 py-3 bg-white text-[#191D39] rounded-lg hover:shadow-2xl shadow-[#80808085] cursor-pointer transition duration-500">
+                  <Image src="/icons/check.svg" alt="check" width={20} height={20} /> <span className="">140+ AI Avatars</span>
+                </div>
+                <div className="flex items-center gap-2 px-4 py-3 bg-white text-[#191D39] rounded-lg hover:shadow-2xl shadow-[#80808085] cursor-pointer transition duration-500">
+                  <Image src="/icons/check.svg" alt="check" width={20} height={20} /> <span className="">Edit as simply as a slide-deck</span>
+                </div>
+              </div>
             </div>
-            <div className="flex gap-x-5 !mt-8">
-              <div className="flex items-center gap-2 px-4 py-3 bg-white text-[#191D39] rounded-lg hover:shadow-2xl shadow-[#80808085] cursor-pointer transition duration-500">
-                <Image src="/icons/check.svg" alt="check" width={20} height={20} /> <span className="">120+ languages</span>
-              </div>
-              <div className="flex items-center gap-2 px-4 py-3 bg-white text-[#191D39] rounded-lg hover:shadow-2xl shadow-[#80808085] cursor-pointer transition duration-500">
-                <Image src="/icons/check.svg" alt="check" width={20} height={20} /> <span className="">140+ AI Avatars</span>
-              </div>
-              <div className="flex items-center gap-2 px-4 py-3 bg-white text-[#191D39] rounded-lg hover:shadow-2xl shadow-[#80808085] cursor-pointer transition duration-500">
-                <Image src="/icons/check.svg" alt="check" width={20} height={20} /> <span className="">Edit as simply as a slide-deck</span>
-              </div>
+            <div className="mt-10 flex justify-center items-center">
+              <Image src="/assets/home-frame0.svg" alt="" width={1040} height={450} className="relative z-[1] -translate-x-20" />
+              <div className="bg-[#B1B3FC] rounded-full w-[694px] h-[580px] blur-[100px] absolute" />
             </div>
           </div>
         </div>
       </div>
-      <div className="px-3 md:px-12">
+      <div className="px-3 md:px-12 relative z-[1]">
         <main className="max-w-[1560px] mx-auto">
           <section className="py-20">
             <h1 className="text-xl text-center">Trusted by the world’s fastest-growing companies 🚀</h1>
