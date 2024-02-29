@@ -13,7 +13,7 @@ export default function page() {
 
   return (
     <div className="">
-      <div className="max-w-[1360px] mx-auto w-full h-full min-h-screen flex justify-center items-center">
+      <div className="max-w-[1460px] mx-auto w-full h-full min-h-screen flex justify-center items-center">
         <div className="flex w-full justify-center">
           <div className="w-full flex gap-24">
             <section className="w-full">
