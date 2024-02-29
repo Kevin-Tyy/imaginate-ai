@@ -1,0 +1,12 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="user">
+<g id="Oval">
+<circle cx="12.6484" cy="7.58789" r="4" stroke="#191D39" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="12.6484" cy="7.58789" r="4" stroke="#191D39" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path">
+<path d="M6.64844 21.5879V19.5879C6.64844 17.3788 8.4393 15.5879 10.6484 15.5879H14.6484C16.8576 15.5879 18.6484 17.3788 18.6484 19.5879V21.5879" stroke="#191D39" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.64844 21.5879V19.5879C6.64844 17.3788 8.4393 15.5879 10.6484 15.5879H14.6484C16.8576 15.5879 18.6484 17.3788 18.6484 19.5879V21.5879" stroke="#191D39" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
