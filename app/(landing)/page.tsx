@@ -33,7 +33,11 @@ export default function Home() {
                   Lorem ipsum dolor sit amet consectetur. Nullam ullamcorper urna nunc tristique. Mi id nisl nulla montes. Phasellus diam risus fringilla
                   consectetur enim varius. Metus lectus leo dolor.
                 </p>
-                <button className="py-4 px-8 bg-white text-[#5A34FF] rounded-xl">Get into Videos World</button>
+                <Link href="/ai/text_to_video">
+                  <button className="mt-6 py-4 px-8 outline-none bg-white text-[#5A34FF] rounded-xl hover:scale-110  transition duration-500">
+                    Get into Videos World
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -49,9 +53,11 @@ export default function Home() {
                 Lorem ipsum dolor sit amet consectetur. Nullam ullamcorper urna nunc tristique. Mi id nisl nulla montes. Phasellus diam risus fringilla
                 consectetur enim varius. Metus lectus leo dolor.
               </p>
-              <button className="py-4 px-8 bg-white border-gradient text-[#5A34FF] rounded-xl">
-                <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5A34FF] bg-clip-text text-transparent">Get into AI Product World</span>
-              </button>
+              <Link href="/ai/product_photos">
+                <button className="mt-6 py-4 px-8 outline-none bg-white border-gradient text-[#5A34FF] rounded-xl hover:scale-110 transition duration-500">
+                  <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5A34FF] bg-clip-text text-transparent">Get into AI Product World</span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

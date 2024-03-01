@@ -18,7 +18,7 @@ export default function page() {
       <div className="max-w-[1460px] mx-auto w-full h-full min-h-screen flex justify-center items-center">
         <div className="flex w-full justify-center">
           <div className="w-full flex gap-24">
-            <section className="w-full">
+            <section className="w-full max-w-[560px]">
               <div className="relative w-full">
                 <Image src={"/logo/imaginate.svg"} alt="imaginate" height={80} width={80} className="max-h-16 w-44 min-w-44" />
                 <div className="space-y-4 mt-12">

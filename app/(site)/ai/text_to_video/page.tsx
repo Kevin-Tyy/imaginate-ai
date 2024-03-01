@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 export default function page() {
   return (
-    <div>
+    <main>
       <div className="relative">
         <div className="w-[450px] h-[200px] rounded-full absolute top-0 right-0 bg-gradient-to-r from-[#4E31FF] to-[#3669EC00] blur-[200px]" />
         <div className="w-[450px] h-[200px] rounded-full absolute top-1/2 left-20 bg-gradient-to-r from-[#4E31FF] to-[#3669EC] blur-[200px]" />
@@ -58,7 +58,7 @@ export default function page() {
                 <Image src="/logo/segment.svg" alt="" width={150} height={30} />
               </div>
               <div className="flex justify-center">
-                <Image src="/logo/hubSpot.svg" alt="" width={150} height={30} />
+                <Image src="/logo/hubSpot.svg" alt="" width={130} height={30} />
               </div>
               <div className="flex justify-center">
                 <Image src="/logo/asana.svg" alt="" width={150} height={30} />
@@ -67,22 +67,22 @@ export default function page() {
                 <Image src="/logo/intercom.svg" alt="" width={150} height={30} />
               </div>
               <div className="flex justify-center">
-                <Image src="/logo/webflow.svg" alt="" width={150} height={30} />
+                <Image src="/logo/webflow.svg" alt="" width={140} height={30} />
               </div>
               <div className="flex justify-center">
-                <Image src="/logo/quora.svg" alt="" width={150} height={30} />
+                <Image src="/logo/quora.svg" alt="" width={120} height={30} />
               </div>
               <div className="flex justify-center">
                 <Image src="/logo/airbnb.svg" alt="" width={150} height={30} />
               </div>
               <div className="flex justify-center">
-                <Image src="/logo/amazon.svg" alt="" width={150} height={30} />
+                <Image src="/logo/amazon.svg" alt="" width={130} height={30} />
               </div>
               <div className="flex justify-center">
                 <Image src="/logo/microsoft.svg" alt="" width={150} height={30} />
               </div>
               <div className="flex justify-center">
-                <Image src="/logo/wix.svg" alt="" width={40} height={10} />
+                <Image src="/logo/wix.svg" alt="" width={70} height={70} />
               </div>
             </div>
           </section>
@@ -399,6 +399,6 @@ export default function page() {
           </section>
         </main>
       </div>
-    </div>
+    </main>
   );
 }

@@ -8,7 +8,7 @@ type Props = {
 
 export default function layout({ children }: Props) {
   return (
-    <div className="bg-[#F4F3FF] text-primary-black text-[18px]">
+    <div className="bg-[#F4F3FF] text-primary-black text-[17px]">
       <Navbar />
       {children}
       <Footer />

@@ -8,6 +8,32 @@ import MobileSidebar from "./MobileSidebar";
 export default function Navbar() {
   const pathname = usePathname();
   const [isExpanded, setIsExpanded] = useState(false);
+  const navLinks = [
+    {
+      href: "#products",
+      label: "Products",
+    },
+    {
+      href: "#Use Cases",
+      label: "Use Cases",
+    },
+    {
+      href: "/pricing",
+      label: "Pricing",
+    },
+    {
+      href: "#Resources",
+      label: "Resources",
+    },
+    {
+      href: "/about",
+      label: "Company",
+    },
+    {
+      href: "#faq",
+      label: "FAQ",
+    },
+  ];
   return (
     <header className="absolute top-0 w-full px-4 md:px-16 py-4 z-[5]">
       <div className="max-w-[1560px] mx-auto">
@@ -34,21 +60,21 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-x-12">
             <div className="">
               <ul className="text-[#636369] flex gap-x-10">
-                <li>
-                  <Link href="#products">Features</Link>
-                </li>
-                <li>
-                  <Link href="#products">Use Cases</Link>
-                </li>
-                <li>
-                  <Link href="#products">Pricing</Link>
-                </li>
-                <li>
-                  <Link href="#testimonials">Resources</Link>
-                </li>
-                <li>
-                  <Link href="#faq">Company</Link>
-                </li>
+                {navLinks.map((link, index) => (
+                  <Link href={link.href} key={index}>
+                    <div
+                      className={`flex flex-col gap-[10px] items-center cursor-pointer ${
+                        pathname === link.href && "text-transparent bg-gradient-to-r from-primary-purple to-primary-blue bg-clip-text font-semibold"
+                      }`}>
+                      <h1 className="whitespace-nowrap">{link.label}</h1>
+                      <div
+                        className={`w-2.5 h-2.5 rounded-full bg-gradient-to-r from-primary-purple to-primary-blue absolute mt-8 transition duration-300 ${
+                          pathname === link.href ? "visible" : "invisible"
+                        }`}
+                      />
+                    </div>
+                  </Link>
+                ))}
               </ul>
             </div>
             <div className="flex gap-x-5">

@@ -20,7 +20,7 @@ export default function Footer() {
               <button className="bg-primary-blue text-white px-8 py-5 rounded-xl">Subscribe</button>
             </div>
             <p className="text-[#8E93A4] mt-6">
-              By subscribing you agree to with our
+              By subscribing you agree to with our{" "}
               <Link href="#" className="text-primary-blue underline">
                 Privacy Policy
               </Link>

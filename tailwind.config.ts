@@ -12,6 +12,8 @@ const config: Config = {
         "primary-purple": "#CE4FFF",
         "primary-blue": "#5A34FF",
         "primary-black": "#191D39",
+        "primary-grey": "#848199",
+        "primary-warning": "#FBA91D",
       },
     },
   },

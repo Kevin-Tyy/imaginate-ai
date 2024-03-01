@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, useEffect } from "react";
 import Logo from "./shared/Logo";
+import { usePathname } from "next/navigation";
 interface Props {
   onClose: () => void;
   isOpen?: boolean;
@@ -31,7 +32,7 @@ export default function MobileSidebar({ onClose, isOpen }: Props) {
       label: "Use Cases",
     },
     {
-      href: "#Pricing",
+      href: "/pricing",
       label: "Pricing",
     },
     {
@@ -39,7 +40,7 @@ export default function MobileSidebar({ onClose, isOpen }: Props) {
       label: "Resources",
     },
     {
-      href: "#Company",
+      href: "/about",
       label: "Company",
     },
     {
@@ -48,6 +49,7 @@ export default function MobileSidebar({ onClose, isOpen }: Props) {
     },
   ];
 
+  const pathname = usePathname();
   return (
     <nav
       ref={mainRef}
@@ -78,7 +80,11 @@ export default function MobileSidebar({ onClose, isOpen }: Props) {
         <div className="flex flex-col gap-10">
           {navLinks.map((link, index) => (
             <Link href={link.href} key={index}>
-              <div onClick={onClose} className="flex gap-[10px] items-center cursor-pointer">
+              <div
+                onClick={onClose}
+                className={`flex gap-[10px] items-center cursor-pointer ${
+                  pathname === link.href && "text-transparent bg-gradient-to-r from-primary-purple to-primary-blue bg-clip-text font-semibold"
+                }`}>
                 <h1 className="whitespace-nowrap">{link.label}</h1>
               </div>
             </Link>
