@@ -44,7 +44,7 @@ export default function page() {
                   </li>
                 </ul>
               </div>
-              <button className="w-full bg-primary-blue text-white p-4 rounded-xl">Choose plan</button>
+              <button className="w-full bg-primary-blue text-white p-4 rounded-xl hover:scale-105 transition duration-300">Choose plan</button>
             </div>
             <div className="min-h-[520px] w-full py-[64px] flex flex-col justify-between">
               <div className="space-y-8">
@@ -68,9 +68,9 @@ export default function page() {
                   </li>
                 </ul>
               </div>
-              <button className="w-full bg-primary-blue text-white p-4 rounded-xl">Choose plan</button>
+              <button className="w-full bg-primary-blue text-white p-4 rounded-xl hover:scale-105 transition duration-300">Choose plan</button>
             </div>
-            <div className="bg-gradient-to-b from-primary-purple to-primary-blue text-white px-10 py-10 rounded-[44.103px] w-full shadow-2xl shadow-[#5243c28e] -translate-y-[32px]">
+            <div className="bg-gradient-to-b from-primary-purple to-primary-blue text-white px-10 py-10 rounded-[44.103px] w-full shadow-card -translate-y-[32px]">
               <div className="min-h-[520px] w-full flex flex-col justify-between">
                 <div className="space-y-8">
                   <div className="flex justify-end">
@@ -107,7 +107,7 @@ export default function page() {
                   </ul>
                 </div>
               </div>
-              <button className="w-full text-primary-blue bg-white p-4 rounded-xl">Choose plan</button>
+              <button className="w-full text-primary-blue bg-white p-4 rounded-xl hover:scale-105 transition duration-300">Choose plan</button>
             </div>
           </div>
         </div>

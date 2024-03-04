@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BsStarFill } from "react-icons/bs";
+import { team_members } from "./components/constants/data";
+import Faq from "./components/Faq";
 
 export default function page() {
   return (
@@ -51,9 +53,9 @@ export default function page() {
               </div>
             </div>
             <div className="w-full bg-white flex items-start gap-5 rounded-3xl p-10 hover:shadow-2xl hover:shadow-[#00000031] transition duration-500">
-              <Image src="/icons/vision-ico.svg" alt="" width={40} height={40} />
+              <Image src="/icons/mission-ico.svg" alt="" width={40} height={40} />
               <div className="w-full space-y-3">
-                <h1 className="text-4xl font-medium">Our Vision</h1>
+                <h1 className="text-4xl font-medium">Our Mission</h1>
                 <p className="leading-loose">
                   Lorem ipsum dolor sit amet consectetur. Aliquam enim scelerisque ante elit sed bibendum sit dui in. Amet amet aliquam dignissim molestie amet
                   ipsum vel vitae. Ultrices.
@@ -112,9 +114,37 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="bg-gradient-to-b from-white to-[#F4F3FF] py-20">
+      <section className="mt-8 py-20">
+        <div className="flex flex-col items-center">
+          <h2 className="text-xl font-semibold">
+            <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text text-center">The team </span> <span>🔥</span>
+          </h2>
+          <h1 className="text-5xl font-bold max-w-5xl capitalize leading-normal text-[#191D39] !mt-4 text-center">
+            Balancing technical, academic and entrepreneurial excellence{" "}
+          </h1>
+        </div>
+        <div className="grid grid-cols-3 max-w-fit mx-auto gap-8 mt-10">
+          {team_members.map((member, index) => (
+            <div key={index} className="group relative rounded-xl overflow-hidden cursor-pointer">
+              <Image src={member.image_url} alt="" width={365} height={365} />
+              <div className="opacity-0 group-hover:opacity-100 absolute inset-0 bg-gradient-to-b from-black/40 to-black/90 transition duration-500 flex flex-col justify-end p-5 text-white space-y-2">
+                <h1 className="text-2xl font-medium">{member.names}</h1>
+                <p className="text-sm">{member.role}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="flex justify-center !mt-16">
+          <Link href="#">
+            <button className="bg-gradient-to-br from-primary-purple to-primary-blue text-white rounded-2xl px-8 py-4 max-w-fit mx-auto hover:scale-110 transition duration-300">
+              See the whole team
+            </button>
+          </Link>
+        </div>
+      </section>
+      <section className="bg-gradient-to-b from-white to-[#F4F3FF] mt-8 py-20">
         <div className="max-w-[1560px] mx-auto">
-          <h1 className="text-center font-semibold">Our Investors 🚀</h1>
+          <h1 className="text-center font-semibold text-lg">Our Investors 🚀</h1>
           <div className="grid grid-cols-5 gap-10 mt-14">
             <div className="flex justify-center">
               <Image src="/logo/segment.svg" alt="" width={150} height={30} />
@@ -148,6 +178,17 @@ export default function page() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="mt-8 py-20">
+        <div className="flex flex-col items-center">
+          <h2 className="text-xl font-semibold">
+            <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text text-center">AI FAQs </span> <span>🔥</span>
+          </h2>
+          <h1 className="text-5xl font-bold max-w-4xl capitalize leading-normal text-[#191D39] !mt-4 text-center">
+            Here’s a recap of what you are getting access to today
+          </h1>
+        </div>
+        <Faq />
       </section>
     </main>
   );
