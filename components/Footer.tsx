@@ -12,12 +12,12 @@ export default function Footer() {
           <div className="w-full">
             <h1 className="font-bold text-lg">Subscribe</h1>
             <p className="text-[#8E93A4] mt-3">Join our newsletter to stay up to date on features and releases.</p>
-            <div className="bg-white p-4 flex rounded-2xl gap-2 mt-7 lg:max-w-2xl">
-              <div className="bg-[#F6F7F9] p-3 rounded-xl">
+            <div className="bg-white p-3.5 flex rounded-2xl gap-2 mt-7 lg:max-w-2xl">
+              <div className="bg-[#F6F7F9] px-4 py-3 rounded-xl">
                 <Image src="/icons/sms.svg" alt="sms" width={35} height={35} />
               </div>
               <input type="text" className="w-full flex-1 outline-none px-2 rounded-xl" placeholder="Enter your email" />
-              <button className="bg-primary-blue text-white px-8 py-5 rounded-xl">Subscribe</button>
+              <button className="bg-primary-blue text-white px-8 py-4 rounded-xl">Subscribe</button>
             </div>
             <p className="text-[#8E93A4] mt-6">
               By subscribing you agree to with our{" "}

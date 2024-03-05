@@ -384,7 +384,7 @@ export default function page() {
               Explore all integrations
             </button>
           </section>
-          <section className="bg-primary-blue flex justify-center items-center px-5 py-20 md:p-20 mt-10 rounded-[40px]">
+          <section className="bg-primary-blue flex justify-center items-center px-5 py-20 md:p-28 mt-10 rounded-[40px]">
             <div className="space-y-5 flex flex-col justify-center">
               <h1 className="text-3xl min-[400px]:text-4xl md:text-5xl xl:text-[58px] !leading-normal font-bold text-white max-w-4xl text-center mx-auto">
                 Lorem ipsum dolor sit amet consectetur. Gravida a.

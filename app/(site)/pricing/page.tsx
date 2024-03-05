@@ -12,12 +12,12 @@ export default function page() {
         </div>
       </div>
       <section className="py-20 relative z-[1]">
-        <div className="h-[50vh] flex flex-col items-center justify-center space-y-8">
+        <div className="h-[45vh] flex flex-col items-center justify-center space-y-8">
           <h2 className="text-xl font-semibold">
-            <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">Use Cases</span> <span>🔥</span>
+            <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">AI Pricing Plans</span> <span>🔥</span>
           </h2>
           <h1 className="text-5xl font-bold max-w-4xl capitalize leading-normal text-center text-[#191D39] !mt-4">
-            For teams who create training videos at scale
+            Here’s a recap of what you are getting access to today{" "}
           </h1>
         </div>
         <div className="bg-white/50 rounded-[44.103px] flex w-full max-w-[1360px] mx-auto">

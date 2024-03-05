@@ -40,7 +40,7 @@ export default function MobileSidebar({ onClose, isOpen }: Props) {
       label: "Resources",
     },
     {
-      href: "/about",
+      href: "/company",
       label: "Company",
     },
     {

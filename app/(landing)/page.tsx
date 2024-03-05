@@ -25,7 +25,7 @@ export default function Home() {
           <video src="/videos/-ef7b-44b8-83b6-2bbd00c57e9f.mp4" loop autoPlay className="w-full absolute inset-0 h-full object-cover videobg" />
           <div className="bg-[#C04CFF]/80 opacity-90 absolute inset-0 z-[1] h-full"></div>
         </div>
-        <div className="flex justify-center items-center w-full h-full relative z-[1] max-w-5xl">
+        <div className="flex justify-center items-center w-4/5 h-full relative z-[1]">
           <div className="max-w-xl space-y-6">
             <h1 className="text-[55px] font-medium text-white capitalize leading-[1.2]">
               Turn your text into videos in <span className="font-bold">minutes</span>
@@ -42,7 +42,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full relative z-[1] flex">
-          <div className="home-clip bg-gradient-to-b from-white to-[#f3f2ff] w-[400px] h-full" />
+          <div className="home-clip bg-gradient-to-b from-white to-[#f3f2ff] w-[440px] h-full translate-x-[0.5px]" />
           <div className="w-full bg-gradient-to-b from-white to-[#f3f2ff] flex">
             <div className="flex justify-center items-center w-full h-full">
               <div className="max-w-xl space-y-6">

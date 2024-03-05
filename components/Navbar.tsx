@@ -26,7 +26,7 @@ export default function Navbar() {
       label: "Resources",
     },
     {
-      href: "/about",
+      href: "/company",
       label: "Company",
     },
     {
