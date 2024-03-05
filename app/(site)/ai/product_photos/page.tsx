@@ -10,6 +10,61 @@ import Slider from "./components/ImageSlider";
 export default function page() {
   return (
     <main>
+      <div className="bg-gradient-to-b from-white to-[#F4F3FF]">
+        <div className=" bg-[url('/backgrounds/products_page_hero.svg')] bg-cover relative z-[1]">
+          <section className="min-h-screen py-20 max-w-[1560px] mx-auto flex gap-20 items-center">
+            <div className="w-full flex flex-col space-y-8">
+              <h2 className="text-xl font-semibold">
+                <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">Products Before and After</span> <span>🔥</span>
+              </h2>
+              <h1 className="text-5xl font-bold capitalize leading-normal text-[#191D39] !mt-4">
+                Business Perfection: AI Product Photos in <span className="text-primary-purple">3 Clicks</span>
+              </h1>
+              <p className="leading-loose">
+                Skyrocket Your sales, Traffic, and Customer Engagement With{" "}
+                <span className="bg-gradient-to-r from-primary-blue to-primary-purple text-transparent bg-clip-text">
+                  AI-Driven Product Photos in 60 Seconds
+                </span>
+              </p>
+              <div className="flex items-center gap-10">
+                <button className="w-full bg-gradient-to-r from-primary-purple to-primary-blue text-white p-4 rounded-xl hover:scale-105 transition duration-300">
+                  Get AI Product Photo{" "}
+                </button>
+                <p className="w-full">Commitment Free : Cancel Anytime!</p>
+              </div>
+              <div>
+                <Image src="/dummy-people.png" alt="" width={220} height={100} draggable={false} className="cursor-pointer" />
+                <p>
+                  <span className="text-primary-blue">6887 </span>People Can't Be Wrong
+                </p>
+              </div>
+              <div className="flex items-center gap-10 !mt-20">
+                <Image
+                  src="/assets/mac-support.png"
+                  alt=""
+                  width={250}
+                  height={300}
+                  className="cursor-pointer hover:scale-110 transition duration-300 hover:shadow-2xl rounded-2xl"
+                />
+                <Image
+                  src="/assets/windows-support.png"
+                  alt=""
+                  width={250}
+                  height={300}
+                  className="cursor-pointer hover:scale-110 transition duration-300 hover:shadow-2xl rounded-2xl"
+                />
+              </div>
+            </div>
+            <div className="w-full">
+              <div>
+                <video autoPlay loop>
+                  <source src="/videos/-e4e3-4e2a-a3ed-22b1dfee17da.mp4" />
+                </video>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
       <section className="py-20 relative max-w-[1560px] mx-auto">
         <div className="flex flex-col items-center justify-center space-y-6">
           <h2 className="text-xl font-semibold">
