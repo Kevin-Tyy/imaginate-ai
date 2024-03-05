@@ -143,12 +143,12 @@ export default function page() {
             </div>
           </div>
           <div className="w-full">
-            <Slider first_image_url="/assets/influencers-img1.png" second_image_url="/assets/influencers-img2.png" />
+            <Slider first_image_url="/assets/ecommerce-img1.png" second_image_url="/assets/ecommerce-img2.png" />
           </div>
         </div>
         <div className="flex gap-10 mt-10">
           <div className="w-full">
-            <Slider first_image_url="/assets/influencers-img1.png" second_image_url="/assets/influencers-img2.png" />
+            <Slider first_image_url="/assets/restaurants-img1.png" second_image_url="/assets/restaurants-img2.png" />
           </div>
           <div className="px-16 py-20 w-full rounded-[40px] flex ">
             <div className="w-full space-y-6">
@@ -183,7 +183,7 @@ export default function page() {
             </div>
           </div>
           <div className="w-full">
-            <Slider first_image_url="/assets/influencers-img1.png" second_image_url="/assets/influencers-img2.png" />
+            <Slider first_image_url="/assets/social-media-img1.png" second_image_url="/assets/social-media-img2.png" />
           </div>
         </div>
         <div className="flex gap-10 mt-10">
@@ -222,12 +222,12 @@ export default function page() {
             </div>
           </div>
           <div className="w-full">
-            <Slider first_image_url="/assets/influencers-img1.png" second_image_url="/assets/influencers-img2.png" />
+            <Slider first_image_url="/assets/business-img1.png" second_image_url="/assets/business-img2.png" />
           </div>
         </div>
         <div className="flex gap-10 mt-10">
           <div className="w-full">
-            <Slider first_image_url="/assets/influencers-img1.png" second_image_url="/assets/influencers-img2.png" />
+            <Slider first_image_url="/assets/photographer-img1.png" second_image_url="/assets/photographer-img2.png" />
           </div>
           <div className="px-16 py-20 w-full rounded-[40px] flex ">
             <div className="w-full space-y-6">
