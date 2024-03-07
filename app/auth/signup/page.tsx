@@ -14,28 +14,28 @@ export default function page() {
   const togglePasswordConfirmVisibility = () => setIsPasswordConfirmVisible((prev) => !prev);
 
   return (
-    <div className="">
-      <div className="max-w-[1460px] mx-auto w-full h-full min-h-screen flex justify-center items-center">
+    <div className="px-6 sm:px-10 py-10 sm:py-20 xl:py-0">
+      <div className="py-6 max-w-[1460px] mx-auto w-full h-full min-h-screen flex justify-center items-center">
         <div className="flex w-full justify-center">
-          <div className="w-full flex gap-24">
-            <section className="w-full max-w-[560px]">
+          <div className="w-full flex flex-col xl:flex-row gap-24 xl:gap-12 2xl:gap-24">
+            <section className="w-full sm:max-w-[560px] mx-auto">
               <div className="relative w-full">
                 <Image src={"/logo/imaginate.svg"} alt="imaginate" height={80} width={80} className="max-h-16 w-44 min-w-44" />
                 <div className="space-y-4 mt-12">
                   <h1 className="text-5xl font-semibold">Sign Up</h1>
                   <p className="leading-relaxed text-base">
                     If you already have an account <br /> You can{" "}
-                    <Link href="/login" className="text-primary-blue">
+                    <Link href="/auth/login" className="text-primary-blue">
                       Login here
                     </Link>
                   </p>
                 </div>
-                <form className="space-y-12 mt-12 text-base">
+                <form className="space-y-14 mt-12 text-base">
                   <div>
                     <label htmlFor="email" className="text-[#999]">
                       Full Name
                     </label>
-                    <div className="h-[50px] group w-full">
+                    <div className="h-[40px] group w-full">
                       <div className="flex items-center gap-3">
                         <Image src="/icons/user.svg" alt="" width={24} height={24} />
                         <input
@@ -47,7 +47,7 @@ export default function page() {
                       </div>
                       <div className="h-[2px] overflow-hidden relative flex flex-col items-center justify-center">
                         <div className="h-[2px] w-full bg-[#999] absolute inset-0" />
-                        <div className="h-[2px] w-0 group-focus-within:w-full bg-primary-black transition-all duration-300 z-[1]" />
+                        <div className="h-[2px] w-0 group-focus-within:w-full bg-primary-black transition-all duration-500 z-[1]" />
                       </div>
                     </div>
                   </div>
@@ -55,7 +55,7 @@ export default function page() {
                     <label htmlFor="email" className="text-[#999]">
                       Email
                     </label>
-                    <div className="h-[50px] group w-full">
+                    <div className="h-[40px] group w-full">
                       <div className="flex items-center gap-3">
                         <Image src="/icons/message.svg" alt="" width={24} height={24} />
                         <input
@@ -67,7 +67,7 @@ export default function page() {
                       </div>
                       <div className="h-[2px] overflow-hidden relative flex flex-col items-center justify-center">
                         <div className="h-[2px] w-full bg-[#999] absolute inset-0" />
-                        <div className="h-[2px] w-0 group-focus-within:w-full bg-primary-black transition-all duration-300 z-[1]" />
+                        <div className="h-[2px] w-0 group-focus-within:w-full bg-primary-black transition-all duration-500 z-[1]" />
                       </div>
                     </div>
                   </div>
@@ -75,7 +75,7 @@ export default function page() {
                     <label htmlFor="password" className="text-[#999]">
                       Password
                     </label>
-                    <div className="h-[50px] group w-full">
+                    <div className="h-[40px] group w-full">
                       <div className="flex items-center gap-3">
                         <Image src="/icons/padlock.svg" alt="" width={24} height={24} />
                         <input
@@ -90,7 +90,7 @@ export default function page() {
                       </div>
                       <div className="h-[2px] overflow-hidden relative flex flex-col items-center justify-center">
                         <div className="h-[2px] w-full bg-[#999] absolute inset-0" />
-                        <div className="h-[2px] w-0 group-focus-within:w-full bg-primary-black transition-all duration-300 z-[1]" />
+                        <div className="h-[2px] w-0 group-focus-within:w-full bg-primary-black transition-all duration-500 z-[1]" />
                       </div>
                     </div>
                   </div>
@@ -98,7 +98,7 @@ export default function page() {
                     <label htmlFor="confirm_password" className="text-[#999]">
                       Confirm Password
                     </label>
-                    <div className="h-[50px] group w-full">
+                    <div className="h-[40px] group w-full">
                       <div className="flex items-center gap-3">
                         <Image src="/icons/padlock.svg" alt="" width={24} height={24} />
                         <input
@@ -113,7 +113,7 @@ export default function page() {
                       </div>
                       <div className="h-[2px] overflow-hidden relative flex flex-col items-center justify-center">
                         <div className="h-[2px] w-full bg-[#999] absolute inset-0" />
-                        <div className="h-[2px] w-0 group-focus-within:w-full bg-primary-black transition-all duration-300 z-[1]" />
+                        <div className="h-[2px] w-0 group-focus-within:w-full bg-primary-black transition-all duration-500 z-[1]" />
                       </div>
                     </div>
                   </div>
@@ -139,16 +139,16 @@ export default function page() {
                 </div>
               </div>
             </section>
-            <section className="bg-primary-black text-white w-full p-20 rounded-2xl flex flex-col justify-between">
+            <section className="bg-primary-black text-white w-full p-10 sm:p-20 rounded-2xl flex flex-col justify-between max-w-[760px] mx-auto xl:max-w-none">
               <div className="flex justify-end">
                 <BiPhone />
                 <p className="">+91 0116 789 754</p>
               </div>
-              <div className="h-full w-full flex-1">
+              <div className="h-full w-full flex-1 max-w-fit mx-auto">
                 <Image src="/assets/254eca5f17b913c874afb12ee4949f89.png" alt="" width={500} height={500} />
               </div>
-              <div className="space-y-3">
-                <h1 className="text-5xl font-medium">Sign Up to Company</h1>
+              <div className="space-y-3 mt-24 xl:mt-0">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium">Sign Up to Company</h1>
                 <p className="text-lg">Lorem Ipsum is simply</p>
               </div>
             </section>

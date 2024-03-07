@@ -79,10 +79,10 @@ export default function Navbar() {
             </div>
             <div className="flex gap-x-5">
               <div className="flex gap-x-4">
-                <Link href="/login">
+                <Link href="/auth/login">
                   <button className="ring-1 ring-inset ring-[#4D4D77] py-3 px-8 rounded-xl">Log in</button>
                 </Link>
-                <Link href="/signup">
+                <Link href="/auth/signup">
                   <button className="bg-gradient-to-r from-[#c04cff] to-[#6035ff] text-white py-3 px-8 rounded-xl">Sign up</button>
                 </Link>
               </div>
