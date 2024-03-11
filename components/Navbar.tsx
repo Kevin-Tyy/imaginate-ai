@@ -35,11 +35,11 @@ export default function Navbar() {
     },
   ];
   return (
-    <header className="absolute top-0 w-full px-4 md:px-16 py-4 z-[5]">
+    <header className="absolute top-0 w-full px-4 py-4 z-[5]">
       <div className="max-w-[1560px] mx-auto">
         <nav className="w-full flex items-center justify-between">
           <Logo />
-          <div className="w-10 grid place-content-center ml-6 md:hidden">
+          <div className="w-10 grid place-content-center ml-6 xl:hidden">
             <div
               className="flex flex-col items-end justify-center rounded-md transition duration-100 p-2 space-y-[7px] cursor-pointer group"
               onClick={() => setIsExpanded(true)}>
@@ -57,7 +57,7 @@ export default function Navbar() {
                 }`}></span>
             </div>
           </div>
-          <div className="hidden md:flex items-center gap-x-12">
+          <div className="hidden xl:flex items-center gap-x-12">
             <div className="">
               <ul className="text-[#636369] flex gap-x-10">
                 {navLinks.map((link, index) => (

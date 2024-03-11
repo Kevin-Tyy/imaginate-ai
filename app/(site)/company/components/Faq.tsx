@@ -15,7 +15,7 @@ export default function Faq() {
     setExpanded(true);
   };
   return (
-    <div className="flex max-w-[1428px] mx-auto gap-8 mt-10">
+    <div className="flex flex-col lg:flex-row max-w-[1428px] mx-auto gap-8 mt-10">
       <div className="w-full flex flex-col gap-8">
         {faqData.slice(0, 3).map(({ answer, question, id }) => {
           return <Card description={answer} title={question} expanded={open === id && expanded} toggle={toggle} key={id} index={id} />;

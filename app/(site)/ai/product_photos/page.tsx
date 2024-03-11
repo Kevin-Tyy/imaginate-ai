@@ -6,75 +6,77 @@ import { CiImageOn } from "react-icons/ci";
 import { TbDownload } from "react-icons/tb";
 import Link from "next/link";
 import Slider from "./components/ImageSlider";
+import PricingCards from "../../pricing/components/PricingCards";
 
 export default function page() {
   return (
     <main>
       <div className="bg-gradient-to-b from-white to-[#F4F3FF]">
         <div className=" bg-[url('/backgrounds/products_page_hero.svg')] bg-cover relative z-[1]">
-          <section className="min-h-screen py-20 max-w-[1560px] mx-auto flex gap-20 items-center">
-            <div className="w-full flex flex-col space-y-8">
-              <h2 className="text-xl font-semibold">
-                <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">Products Before and After</span> <span>🔥</span>
-              </h2>
-              <h1 className="text-5xl font-bold capitalize leading-normal text-[#191D39] !mt-4">
-                Business Perfection: AI Product Photos in <span className="text-primary-purple">3 Clicks</span>
-              </h1>
-              <p className="leading-loose">
-                Skyrocket Your sales, Traffic, and Customer Engagement With{" "}
-                <span className="bg-gradient-to-r from-primary-blue to-primary-purple text-transparent bg-clip-text">
-                  AI-Driven Product Photos in 60 Seconds
-                </span>
-              </p>
-              <div className="flex items-center gap-10">
-                <button className="w-full bg-gradient-to-r from-primary-purple to-primary-blue text-white p-4 rounded-xl hover:scale-105 transition duration-300">
-                  Get AI Product Photo{" "}
-                </button>
-                <p className="w-full">Commitment Free : Cancel Anytime!</p>
-              </div>
-              <div>
-                <Image src="/dummy-people.png" alt="" width={220} height={100} draggable={false} className="cursor-pointer" />
-                <p>
-                  <span className="text-primary-blue">6887 </span>People Can't Be Wrong
+          <section className="min-h-screen py-48 flex flex-col lg:flex-row gap-20 items-center">
+            <div className="w-full flex justify-end relative z-[1] px-4">
+              <div className="w-full flex flex-col space-y-8 lg:max-w-[736px]">
+                <h2 className="font-semibold">
+                  <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">Lorem Ipsum</span> <span>🔥</span>
+                </h2>
+                <h1 className="text-[60px] font-semibold capitalize leading-normal text-[#191D39] !mt-4">
+                  Business Perfection: AI Product Photos in <span className="text-primary-purple font-bold">3 Clicks</span>
+                </h1>
+                <p className="leading-loose">
+                  Skyrocket Your sales, Traffic, and Customer Engagement With{" "}
+                  <span className="bg-gradient-to-r from-primary-blue to-primary-purple text-transparent bg-clip-text">
+                    AI-Driven Product Photos in 60 Seconds
+                  </span>
                 </p>
-              </div>
-              <div className="flex items-center gap-10 !mt-20">
-                <Image
-                  src="/assets/mac-support.png"
-                  alt=""
-                  width={250}
-                  height={300}
-                  className="cursor-pointer hover:scale-110 transition duration-300 hover:shadow-2xl rounded-2xl"
-                />
-                <Image
-                  src="/assets/windows-support.png"
-                  alt=""
-                  width={250}
-                  height={300}
-                  className="cursor-pointer hover:scale-110 transition duration-300 hover:shadow-2xl rounded-2xl"
-                />
+                <div className="flex items-center gap-10">
+                  <button className="w-full bg-gradient-to-r from-primary-purple to-primary-blue text-white p-4 rounded-xl hover:scale-105 transition duration-300">
+                    Get AI Product Photo{" "}
+                  </button>
+                  <p className="w-full">Commitment Free : Cancel Anytime!</p>
+                </div>
+                <div>
+                  <Image src="/dummy-people.png" alt="" width={220} height={100} draggable={false} className="cursor-pointer" />
+                  <p>
+                    <span className="text-primary-blue">6887 </span>People Can't Be Wrong
+                  </p>
+                </div>
+                <div className="flex items-center gap-10 !mt-20">
+                  <Image
+                    src="/assets/mac-support.png"
+                    alt=""
+                    width={250}
+                    height={300}
+                    className="cursor-pointer hover:scale-110 transition duration-300 hover:shadow-2xl rounded-2xl"
+                  />
+                  <Image
+                    src="/assets/windows-support.png"
+                    alt=""
+                    width={250}
+                    height={300}
+                    className="cursor-pointer hover:scale-110 transition duration-300 hover:shadow-2xl rounded-2xl"
+                  />
+                </div>
               </div>
             </div>
-            <div className="w-full">
-              <div>
-                <video autoPlay loop>
-                  <source src="/videos/-e4e3-4e2a-a3ed-22b1dfee17da.mp4" />
-                </video>
-              </div>
+            <div className="w-full relative">
+              <div className="hidden lg:block bg-gradient-to-r from-primary-purple to-primary-blue rounded-full h-[315px] w-[315px] absolute top-40 blur-[170px]" />
+              <video autoPlay loop className="relative z-[1]">
+                <source src="/videos/-e4e3-4e2a-a3ed-22b1dfee17da.mp4" />
+              </video>
             </div>
           </section>
         </div>
       </div>
-      <section className="py-20 relative max-w-[1560px] mx-auto">
+      <section className="px-4 py-20 relative max-w-[1560px] mx-auto">
         <div className="flex flex-col items-center justify-center space-y-6">
-          <h2 className="text-xl font-semibold">
+          <h2 className="text-lg font-semibold">
             <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">Highlights </span> <span>🔥</span>
           </h2>
           <h1 className="text-5xl font-bold max-w-4xl capitalize leading-normal text-center text-[#191D39] !mt-4">Our Product Highlights </h1>
           <p>Let AI Generate Breath-taking Visuals for You Today!</p>
         </div>
-        <div className="flex mt-16 gap-16">
-          <div className="w-full grid grid-cols-2 gap-x-20 gap-y-14">
+        <div className="flex flex-col xl:flex-row items-center mt-16 gap-16">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-x-20 gap-y-14">
             <div className="flex items-start gap-5 group cursor-pointer">
               <div className="p-2 bg-white group-hover:bg-gradient-to-b from-primary-purple to-primary-blue rounded-2xl transition duration-300">
                 <Image src="/svgs/visual-design.svg" alt="" width={40} height={40} />
@@ -132,8 +134,8 @@ export default function page() {
               </div>
             </div>
           </div>
-          <div className="w-4/5">
-            <Image src="/assets/home-highlights0.svg" alt="" width={1000} height={500} />
+          <div className="w-4/5 flex justify-center items-center">
+            <Image src="/assets/home-highlights0.svg" alt="" width={1000} height={500} className="max-w-[700px] select-none" draggable={false} />
           </div>
         </div>
       </section>
@@ -172,15 +174,15 @@ export default function page() {
           </div>
         </Marquee>
       </section>
-      <section className="py-20 relative z-[1] max-w-[1560px] mx-auto">
+      <section className="px-4 py-20 relative z-[1] max-w-[1560px] mx-auto">
         <div className="flex flex-col space-y-8">
-          <h2 className="text-xl font-semibold">
+          <h2 className="text-lg font-semibold">
             <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">Products Before and After</span> <span>🔥</span>
           </h2>
           <h1 className="text-5xl font-bold capitalize leading-normal text-[#191D39] !mt-4">Affordable Professional Product Photography </h1>
         </div>
-        <div className="flex gap-10 mt-10">
-          <div className="px-16 py-20 bg-white w-full rounded-[40px] flex ">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 mt-10">
+          <div className="px-16 py-20 bg-white w-full rounded-[40px] flex">
             <div className="w-full space-y-6">
               <div className="bg-gradient-to-b from-primary-purple to-primary-blue w-fit p-4 rounded-2xl">
                 <Image src="/svgs/ecommerce.svg" alt="" width={44} height={44} />
@@ -197,12 +199,12 @@ export default function page() {
               </Link>
             </div>
           </div>
-          <div className="w-full">
+          <div className="w-full flex justify-center items-center">
             <Slider first_image_url="/assets/ecommerce-img1.png" second_image_url="/assets/ecommerce-img2.png" />
           </div>
         </div>
-        <div className="flex gap-10 mt-10">
-          <div className="w-full">
+        <div className="flex flex-col-reverse md:flex-row gap-10 mt-10">
+          <div className="w-full flex justify-center items-center">
             <Slider first_image_url="/assets/restaurants-img1.png" second_image_url="/assets/restaurants-img2.png" />
           </div>
           <div className="px-16 py-20 w-full rounded-[40px] flex ">
@@ -222,7 +224,7 @@ export default function page() {
             </div>
           </div>
         </div>
-        <div className="flex gap-10 mt-10">
+        <div className="flex flex-col md:flex-row gap-10 mt-10">
           <div className="px-16 py-20 w-full rounded-[40px] flex ">
             <div className="w-full space-y-6">
               <Image src="/svgs/social-media.svg" alt="" width={60} height={60} />
@@ -237,12 +239,12 @@ export default function page() {
               </Link>
             </div>
           </div>
-          <div className="w-full">
+          <div className="w-full flex justify-center items-center">
             <Slider first_image_url="/assets/social-media-img1.png" second_image_url="/assets/social-media-img2.png" />
           </div>
         </div>
-        <div className="flex gap-10 mt-10">
-          <div className="w-full">
+        <div className="flex flex-col-reverse md:flex-row gap-10 mt-10">
+          <div className="w-full flex justify-center items-center">
             <Slider first_image_url="/assets/influencers-img1.png" second_image_url="/assets/influencers-img2.png" />
           </div>
           <div className="px-16 py-20 w-full rounded-[40px] flex ">
@@ -261,7 +263,7 @@ export default function page() {
             </div>
           </div>
         </div>
-        <div className="flex gap-10 mt-10">
+        <div className="flex flex-col md:flex-row gap-10 mt-10">
           <div className="px-16 py-20 w-full rounded-[40px] flex ">
             <div className="w-full space-y-6">
               <Image src="/svgs/store-owner.svg" alt="" width={60} height={60} />
@@ -276,12 +278,12 @@ export default function page() {
               </Link>
             </div>
           </div>
-          <div className="w-full">
+          <div className="w-full flex justify-center items-center">
             <Slider first_image_url="/assets/business-img1.png" second_image_url="/assets/business-img2.png" />
           </div>
         </div>
-        <div className="flex gap-10 mt-10">
-          <div className="w-full">
+        <div className="flex flex-col-reverse md:flex-row gap-10 mt-10">
+          <div className="w-full flex justify-center items-center">
             <Slider first_image_url="/assets/photographer-img1.png" second_image_url="/assets/photographer-img2.png" />
           </div>
           <div className="px-16 py-20 w-full rounded-[40px] flex ">
@@ -306,40 +308,40 @@ export default function page() {
           alt=""
           width={500}
           height={500}
-          className="w-[382px] h-[424px] object-cover rounded-3xl transform cursor-pointer rotate-[2deg] mx-6"
+          className="w-[284px] h-[324px] md:w-[382px] md:h-[424px] object-cover rounded-3xl transform cursor-pointer rotate-[2deg] mx-6"
         />
         <Image
           src="/images/product2.png"
           alt=""
           width={500}
           height={500}
-          className="w-[382px] h-[424px] object-cover rounded-3xl transform cursor-pointer rotate-[-2deg] translate-y-5 mx-6"
+          className="w-[284px] h-[324px] md:w-[382px] md:h-[424px] object-cover rounded-3xl transform cursor-pointer rotate-[-2deg] translate-y-5 mx-6"
         />
         <Image
           src="/images/product3.png"
           alt=""
           width={500}
           height={500}
-          className="w-[382px] h-[424px] object-cover rounded-3xl transform cursor-pointer rotate-[2deg] mx-6"
+          className="w-[284px] h-[324px] md:w-[382px] md:h-[424px] object-cover rounded-3xl transform cursor-pointer rotate-[2deg] mx-6"
         />
         <Image
           src="/images/product4.png"
           alt=""
           width={500}
           height={500}
-          className="w-[382px] h-[424px] object-cover rounded-3xl transform cursor-pointer rotate-[2deg] -translate-y-5 mx-6"
+          className="w-[284px] h-[324px] md:w-[382px] md:h-[424px] object-cover rounded-3xl transform cursor-pointer rotate-[2deg] -translate-y-5 mx-6"
         />
         <Image
           src="/images/product5.png"
           alt=""
           width={500}
           height={500}
-          className="w-[382px] h-[424px] object-cover rounded-3xl transform cursor-pointer rotate-[-2deg] mx-6"
+          className="w-[284px] h-[324px] md:w-[382px] md:h-[424px] object-cover rounded-3xl transform cursor-pointer rotate-[-2deg] mx-6"
         />
       </Marquee>
-      <section className="py-20 relative z-[1] max-w-[1560px] mx-auto">
+      <section className="px-4 py-20 relative z-[1] max-w-[1560px] mx-auto">
         <div className="flex flex-col items-center justify-center space-y-8">
-          <h2 className="text-xl font-semibold">
+          <h2 className="text-lg font-semibold">
             <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">Comparison</span> <span>🔥</span>
           </h2>
           <h1 className="text-5xl font-bold max-w-4xl capitalize leading-normal text-center text-[#191D39] !mt-4">
@@ -356,7 +358,7 @@ export default function page() {
             <span className="font-semibold">Fusce tellus pellentesque</span> quam eget. Hendrerit pellentesque pretium praesent viverra.
           </p>
         </div>
-        <div className="flex gap-4 mt-16">
+        <div className="flex flex-col lg:flex-row gap-4 mt-16">
           <div className="w-full bg-gradient-to-b from-white to-[#F4F3FF] p-12 rounded-3xl">
             <h1 className="text-2xl font-semibold">Traditional Product Photography 📷</h1>
             <ul className="space-y-5 mt-8">
@@ -417,10 +419,10 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="bg-gradient-to-b from-white to-[rgb(244,243,255)] mt-8 pt-20">
-        <div className="max-w-[1560px] mx-auto flex gap-10">
+      <section className="bg-gradient-to-b from-white to-[rgb(244,243,255)] mt-8 px-4 pt-20">
+        <div className="max-w-[1560px] mx-auto flex flex-col lg:flex-row gap-10">
           <div className="w-full space-y-7">
-            <h2 className="text-xl font-semibold">
+            <h2 className="text-lg font-semibold">
               <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text text-center text-base">
                 The Magical 3 Steps Process
               </span>{" "}
@@ -438,7 +440,7 @@ export default function page() {
               vulputate vitae.
             </p>
           </div>
-          <div className="w-full flex items-center justify-end">
+          <div className="w-full flex items-center justify-center lg:justify-end">
             <div className="flex flex-col gap-10 w-full max-w-[650px]">
               <div className="flex justify-start w-full">
                 <div className="max-w-fit flex items-center bg-indigo-200/50 text-violet-500 py-7 px-10 font-normal rounded-3xl cursor-pointer gap-3 relative">
@@ -472,111 +474,21 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="py-20 relative z-[1]">
+      <section className="py-20 relative z-[1] px-4">
         <div className="flex flex-col items-center justify-center space-y-8">
-          <h2 className="text-xl font-semibold">
+          <h2 className="text-lg font-semibold">
             <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">AI Pricing Plans</span> <span>🔥</span>
           </h2>
           <h1 className="text-5xl font-bold max-w-4xl capitalize leading-normal text-center text-[#191D39] !mt-4">
             Here’s a recap of what you are getting access to today{" "}
           </h1>
         </div>
-        <div className="bg-white/50 rounded-[44.103px] flex w-full max-w-[1360px] mt-20 mx-auto">
-          <div className="w-full flex gap-20 pl-20">
-            <div className="min-h-[520px] w-full py-[64px] flex flex-col justify-between">
-              <div className="space-y-8">
-                <h1 className="text-5xl text-primary-black font-semibold">
-                  $19 <span className="text-lg text-primary-grey">/month</span>
-                </h1>
-                <h2 className="text-2xl font-semibold text-primary-black">Starter</h2>
-                <p className="text-primary-grey leading-relaxed">Unleash the power of automation.</p>
-                <ul className="space-y-4">
-                  <li className="flex gap-2 items-center">
-                    <Image src="/icons/check-circle.svg" alt="check" width={24} height={24} />
-                    <span>Lorem ipsum dolor sit amet</span>
-                  </li>
-                  <li className="flex gap-2 items-center">
-                    <Image src="/icons/check-circle.svg" alt="check" width={24} height={24} />
-                    <span>Lorem ipsum dolor sit amet</span>
-                  </li>
-                  <li className="flex gap-2 items-center">
-                    <Image src="/icons/check-circle.svg" alt="check" width={24} height={24} />
-                    <span>Lorem ipsum dolor sit amet</span>
-                  </li>
-                </ul>
-              </div>
-              <button className="w-full bg-primary-blue text-white p-4 rounded-xl hover:scale-105 transition duration-300">Choose plan</button>
-            </div>
-            <div className="min-h-[520px] w-full py-[64px] flex flex-col justify-between">
-              <div className="space-y-8">
-                <h1 className="text-5xl text-primary-black font-semibold">
-                  $54 <span className="text-lg text-primary-grey">/month</span>
-                </h1>
-                <h2 className="text-2xl font-semibold text-primary-black">Professional</h2>
-                <p className="text-primary-grey leading-relaxed">Advanced tools to take your work to the next level.</p>
-                <ul className="space-y-4">
-                  <li className="flex gap-2 items-center">
-                    <Image src="/icons/check-circle.svg" alt="check" width={24} height={24} />
-                    <span>Lorem ipsum dolor sit amet</span>
-                  </li>
-                  <li className="flex gap-2 items-center">
-                    <Image src="/icons/check-circle.svg" alt="check" width={24} height={24} />
-                    <span>Lorem ipsum dolor sit amet</span>
-                  </li>
-                  <li className="flex gap-2 items-center">
-                    <Image src="/icons/check-circle.svg" alt="check" width={24} height={24} />
-                    <span>Lorem ipsum dolor sit amet</span>
-                  </li>
-                </ul>
-              </div>
-              <button className="w-full bg-primary-blue text-white p-4 rounded-xl hover:scale-105 transition duration-300">Choose plan</button>
-            </div>
-            <div className="bg-gradient-to-b from-primary-purple to-primary-blue text-white px-10 py-10 rounded-[44.103px] w-full shadow-card -translate-y-[32px]">
-              <div className="min-h-[520px] w-full flex flex-col justify-between">
-                <div className="space-y-8">
-                  <div className="flex justify-end">
-                    <div className="bg-white px-6 py-2 max-w-fit rounded-full">
-                      <span className="text-primary-purple">Most Popular</span>
-                    </div>
-                  </div>
-                  <h1 className="text-5xl font-semibold">
-                    $89 <span className="text-lg">/month</span>
-                  </h1>
-                  <h2 className="text-2xl font-semibold">Company</h2>
-                  <p className="">Automation plus enterprise-grade features.</p>
-                  <ul className="space-y-4">
-                    <li className="flex gap-2 items-center">
-                      <Image src="/icons/check-circle-2.svg" alt="check" width={24} height={24} />
-                      <span>Lorem ipsum dolor sit amet</span>
-                    </li>
-                    <li className="flex gap-2 items-center">
-                      <Image src="/icons/check-circle-2.svg" alt="check" width={24} height={24} />
-                      <span>Lorem ipsum dolor sit amet</span>
-                    </li>
-                    <li className="flex gap-2 items-center">
-                      <Image src="/icons/check-circle-2.svg" alt="check" width={24} height={24} />
-                      <span>Lorem ipsum dolor sit amet</span>
-                    </li>
-                    <li className="flex gap-2 items-center">
-                      <Image src="/icons/check-circle-2.svg" alt="check" width={24} height={24} />
-                      <span>Lorem ipsum dolor sit amet</span>
-                    </li>
-                    <li className="flex gap-2 items-center">
-                      <Image src="/icons/check-circle-2.svg" alt="check" width={24} height={24} />
-                      <span>Lorem ipsum dolor sit amet</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <button className="w-full text-primary-blue bg-white p-4 rounded-xl hover:scale-105 transition duration-300">Choose plan</button>
-            </div>
-          </div>
-        </div>
+        <PricingCards />
       </section>
-      <section className="bg-gradient-to-b from-white to-[rgb(244,243,255)] mt-8 pt-20">
-        <div className="max-w-[1560px] mx-auto flex">
+      <section className="bg-gradient-to-b from-white to-[rgb(244,243,255)] mt-8 pt-20 px-4">
+        <div className="max-w-[1560px] mx-auto flex flex-col lg:flex-row">
           <div className="w-full space-y-7">
-            <h2 className="text-xl font-semibold">
+            <h2 className="text-lg font-semibold">
               <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text text-center text-base">Why Us </span> <span>🔥</span>
             </h2>
             <h1 className="text-5xl font-bold max-w-4xl capitalize leading-normal text-[#191D39] !mt-4">Lorem ipsum dolor sit amet consectetur. </h1>
@@ -614,9 +526,9 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="py-20">
+      <section className="py-20 px-4">
         <div className="flex flex-col items-center">
-          <h2 className="text-xl font-semibold">
+          <h2 className="text-lg font-semibold">
             <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text text-center">AI FAQs </span> <span>🔥</span>
           </h2>
           <h1 className="text-5xl font-bold max-w-4xl capitalize leading-normal text-[#191D39] !mt-4 text-center">
@@ -625,7 +537,7 @@ export default function page() {
         </div>
         <Faq />
       </section>
-      <div className="!pb-10">
+      <div className="!pb-10 px-4">
         <section className="bg-primary-blue flex justify-center w-full min-w-[360px] items-center px-5 py-20 md:p-28 mt-10 rounded-[40px] max-w-[1560px] mx-auto">
           <div className="space-y-5 flex flex-col justify-center">
             <h1 className="text-3xl min-[400px]:text-4xl md:text-5xl xl:text-[58px] !leading-normal font-bold text-white max-w-4xl text-center mx-auto">

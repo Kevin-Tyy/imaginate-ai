@@ -17,12 +17,12 @@ export default function page() {
           <h1 className="text-[55px] font-semibold text-primary-black ">About Us</h1>
         </div>
       </div>
-      <section className="bg-[#FAFAFA] pt-40">
+      <section className="bg-[#FAFAFA] pt-40 px-4">
         <div className="max-w-[1560px] mx-auto">
-          <div className="flex gap-20">
+          <div className="flex flex-col lg:flex-row gap-20">
             <div className="w-full flex flex-col justify-between">
               <h1 className="text-primary-black text-[45px] font-semibold">Lorem ipsum dolor sit amet consectetur. Nisl varius sapien.</h1>
-              <Link href="#">
+              <Link href="#" className="hidden lg:block">
                 <button className="bg-primary-blue text-white rounded-xl px-8 py-4 max-w-fit mx-auto !mt-8 hover:scale-110 transition duration-300">
                   Contact Us
                 </button>
@@ -40,8 +40,13 @@ export default function page() {
                 feugiat tempor porttitor eleifend velit. Pretium adipiscing risus sit lacinia. Magna ullamcorper at risus et lectus urna.
               </p>
             </div>
+            <Link href="#" className="block lg:hidden">
+              <button className="bg-primary-blue text-white rounded-xl px-8 py-4 max-w-fit mx-auto !mt-8 hover:scale-110 transition duration-300">
+                Contact Us
+              </button>
+            </Link>
           </div>
-          <div className="flex justify-center w-full gap-10 mt-16 -mb-28">
+          <div className="flex flex-col lg:flex-row justify-center w-full gap-10 mt-16 -mb-28">
             <div className="w-full bg-white flex items-start gap-5 rounded-3xl p-10 hover:shadow-2xl hover:shadow-[#00000031] transition duration-500 cursor-default">
               <Image src="/icons/vision-ico.svg" alt="" width={40} height={40} />
               <div className="w-full space-y-3">
@@ -66,11 +71,13 @@ export default function page() {
         </div>
         <div className="h-[300px] w-full bg-[#F4F3FF]" />
       </section>
-      <section className="bg-primary-black py-32">
+      <section className="bg-primary-black py-32 px-4">
         <div className="max-w-[1560px] mx-auto">
-          <div className="w-full flex gap-20">
-            <div className="w-full flex flex-col justify-between">
-              <h1 className="text-[42px] text-white font-bold leading-normal">Lorem ipsum dolor sit amet consectetur. At hendrerit quam.</h1>
+          <div className="w-full flex flex-col  xl:flex-row gap-20">
+            <div className="w-full flex flex-col items-center xl:items-start justify-between space-y-10">
+              <h1 className="text-[42px] text-white font-bold leading-normal text-center xl:text-start">
+                Lorem ipsum dolor sit amet consectetur. At hendrerit quam.
+              </h1>
               <div className="bg-primary-grey h-[1px] w-full" />
               <div className="flex">
                 <div className="flex flex-col space-y-3">
@@ -84,27 +91,27 @@ export default function page() {
                     </div>
                     <span className="text-white text-2xl">5.0</span>
                   </div>
-                  <p className="text-primary-grey">Lorem ipsum</p>
+                  <p className="text-primary-grey text-center xl:text-start">Lorem ipsum</p>
                 </div>
               </div>
             </div>
-            <div className="w-full flex">
-              <div className="text-white space-y-5 ring-1 ring-primary-grey grid place-content-center w-[329px] h-[329px] rounded-full">
-                <h1 className="text-6xl text-center">100+</h1>
+            <div className="w-full flex justify-center">
+              <div className="text-white space-y-5 ring-1 ring-primary-grey grid place-content-center w-[200px] h-[200px] sm:w-[249px] sm:h-[249px] xl:w-[280px] xl:h-[280px] 2xl:w-[329px] 2xl:h-[329px] rounded-full">
+                <h1 className="text-4xl md:text-6xl text-center">100+</h1>
                 <p className="text-center text-primary-grey">
                   Team <br />
                   Members
                 </p>
               </div>
-              <div className="text-white space-y-5 ring-1 ring-primary-grey grid place-content-center w-[329px] h-[329px] rounded-full -ml-14">
-                <h1 className="text-6xl text-center">5M+</h1>
+              <div className="text-white space-y-5 ring-1 ring-primary-grey grid place-content-center w-[200px] h-[200px] sm:w-[249px] sm:h-[249px] xl:w-[280px] xl:h-[280px] 2xl:w-[329px] 2xl:h-[329px] rounded-full -ml-14">
+                <h1 className="text-4xl md:text-6xl text-center">5M+</h1>
                 <p className="text-center text-primary-grey">
                   Happy <br />
                   Customers
                 </p>
               </div>
-              <div className="text-white space-y-5 ring-1 ring-primary-grey grid place-content-center w-[329px] h-[329px] rounded-full -ml-14">
-                <h1 className="text-6xl text-center">23+</h1>
+              <div className="text-white space-y-5 ring-1 ring-primary-grey grid place-content-center w-[200px] h-[200px] sm:w-[249px] sm:h-[249px] xl:w-[280px] xl:h-[280px] 2xl:w-[329px] 2xl:h-[329px] rounded-full -ml-14">
+                <h1 className="text-4xl md:text-6xl text-center">23+</h1>
                 <p className="text-center text-primary-grey">
                   Certificate of <br />
                   Merit
@@ -123,7 +130,7 @@ export default function page() {
             Balancing technical, academic and entrepreneurial excellence{" "}
           </h1>
         </div>
-        <div className="grid grid-cols-3 max-w-fit mx-auto gap-8 mt-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 max-w-fit mx-auto gap-8 mt-10">
           {team_members.map((member, index) => (
             <div key={index} className="group relative rounded-xl overflow-hidden cursor-pointer">
               <Image src={member.image_url} alt="" width={365} height={365} />
@@ -145,7 +152,7 @@ export default function page() {
       <section className="bg-gradient-to-b from-white to-[#F4F3FF] mt-8 py-20">
         <div className="max-w-[1560px] mx-auto">
           <h1 className="text-center font-semibold text-lg">Our Investors 🚀</h1>
-          <div className="grid grid-cols-5 gap-10 mt-14">
+          <div className="grid grid-cols-3 lg:grid-cols-5 gap-10 mt-14">
             <div className="flex justify-center">
               <Image src="/logo/segment.svg" alt="" width={150} height={30} />
             </div>

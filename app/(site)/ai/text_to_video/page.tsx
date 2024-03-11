@@ -30,7 +30,7 @@ export default function page() {
                   <button className="ring-1 ring-inset ring-[#4D4D77] py-4 px-10 rounded-xl ">Get a Demo</button>
                 </Link>
               </div>
-              <div className="flex gap-x-5 !mt-8">
+              <div className="flex flex-wrap justify-center gap-y-5 gap-x-5 !mt-8">
                 <div className="flex items-center gap-2 px-4 py-3 bg-white text-[#191D39] rounded-lg hover:shadow-2xl shadow-[#80808085] cursor-pointer transition duration-500">
                   <Image src="/icons/check.svg" alt="check" width={20} height={20} /> <span className="">120+ languages</span>
                 </div>
@@ -53,7 +53,7 @@ export default function page() {
         <main className="max-w-[1560px] mx-auto">
           <section className="py-20">
             <h1 className="text-xl text-center">Trusted by the world’s fastest-growing companies 🚀</h1>
-            <div className="grid grid-cols-5 gap-10 mt-14">
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-10 mt-14">
               <div className="flex justify-center">
                 <Image src="/logo/segment.svg" alt="" width={150} height={30} />
               </div>
@@ -87,15 +87,15 @@ export default function page() {
             </div>
           </section>
           <section className="py-20 flex flex-col items-center space-y-8">
-            <h2 className="text-xl font-semibold">
+            <h2 className="font-semibold">
               <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">Use Cases</span> <span>🔥</span>
             </h2>
             <h1 className="text-5xl font-bold max-w-4xl capitalize leading-normal text-center text-[#191D39] !mt-4">
               For teams who create training videos at scale
             </h1>
             <div className="w-full">
-              <div className="px-20 pt-12 bg-white w-full rounded-[40px] flex gap-28">
-                <div className="w-full space-y-6 mt-10">
+              <div className="pt-12 bg-white w-full rounded-[40px] flex flex-col lg:flex-row gap-14 xl:gap-28 overflow-hidden">
+                <div className="w-full space-y-6 mt-10 pr-12 pl-12 lg:pr-0 lg:pl-20">
                   <div className="bg-gradient-to-br from-primary-purple to-primary-blue w-fit p-3.5 rounded-2xl">
                     <Image src="/icons/user-group.svg" alt="" width={48} height={48} />
                   </div>
@@ -103,18 +103,19 @@ export default function page() {
                   <h2 className="text-[28px] font-semibold leading-relaxed">
                     Replace boring text, PowerPoints and PDFs with engaging videos your team will love
                   </h2>
-                  <p className="leading-loose max-w-xl">
+                  <p className="leading-loose max-w-xl lg:pb-20">
                     "Usually, our colleagues don't jump in the air when they hear e-learning, but the AI videos created with Company Name have sparked
                     motivation that we haven't seen before."
                   </p>
                 </div>
-                <div className="w-full flex items-center">
+                <div className="w-full flex items-center relative pr-12 pl-12 lg:pl-0 lg:pr-20">
                   <div className="bg-gradient-to-r from-primary-purple to-primary-blue rounded-full h-[335px] w-[335px] absolute blur-[170px]" />
                   <Image src="/assets/home-frame1.svg" alt="" width={580} height={540} className="relative z-[1] select-none" draggable={false} />
+                  <div className="absolute h-[200px] w-full bottom-0 bg-gradient-to-b from-transparent via-[#f4f3ff5d] to-[#F4F3FF] z-[2]" />
                 </div>
               </div>
             </div>
-            <div className="flex w-full gap-4">
+            <div className="flex flex-col lg:flex-row w-full gap-4">
               <div className="px-12 bg-white w-full rounded-[40px] flex flex-col gap-8 relative overflow-hidden">
                 <div className="w-full space-y-3 mt-10">
                   <div className="bg-white w-fit p-3.5 rounded-2xl relative z-[1]">
@@ -146,11 +147,11 @@ export default function page() {
             </div>
           </section>
           <section className="mt-20 py-20">
-            <h2 className="text-xl font-semibold">
+            <h2 className="font-semibold">
               <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">From Idea to video in minutes</span> <span>🔥</span>
             </h2>
             <h1 className="text-5xl font-bold max-w-5xl capitalize leading-normal text-[#191D39] !mt-4">See how AI video generator works below </h1>
-            <div className="w-full flex bg-gradient-to-b from-primary-purple to-primary-blue rounded-[42px] mt-10">
+            <div className="w-full flex flex-col lg:flex-row bg-gradient-to-b from-primary-purple to-primary-blue rounded-[42px] mt-10">
               <div className="p-20 bg-white w-full rounded-[40px] flex ">
                 <div className="w-full space-y-6 mt-10">
                   <div className="bg-gradient-to-br from-primary-purple to-primary-blue w-fit p-3.5 rounded-2xl">
@@ -165,13 +166,13 @@ export default function page() {
                   </Link>
                 </div>
               </div>
-              <div className="w-full flex justify-center items-center">
+              <div className="w-full flex justify-center items-center p-10 lg:p-0">
                 <Image src="/assets/home-frame4.svg" alt="" width={590} height={400} />
               </div>
             </div>
           </section>
           <section className="py-20 flex flex-col items-center space-y-8">
-            <h2 className="text-xl font-semibold">
+            <h2 className="font-semibold">
               <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">The ROI for your business</span> <span>🔥</span>
             </h2>
             <h1 className="text-5xl font-bold max-w-5xl capitalize leading-normal text-center text-[#191D39] !mt-4">
@@ -203,7 +204,7 @@ export default function page() {
                   </Link>
                 </div>
               </div>
-              <div className="flex gap-6">
+              <div className="flex flex-col lg:flex-row gap-6">
                 <div className="bg-white rounded-3xl ring-1 ring-[#D0D7E7] w-full p-12 space-y-12">
                   <Image src="/logo/650daa94ccc06003ad69fd29_Zoom.svg" alt="" width={150} height={30} />
                   <div className="border-t border-[#E4E6ED] pt-12 space-y-6">
@@ -249,111 +250,142 @@ export default function page() {
               </div>
             </div>
           </section>
-          <section className="py-20 space-y-8">
-            <h2 className="text-xl font-semibold">
+          <section className="pt-20 pb-10 space-y-8">
+            <h2 className="font-semibold">
               <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">AI AVATARS</span> <span>🔥</span>
             </h2>
             <div className="flex justify-between">
               <h1 className="text-5xl font-bold max-w-2xl capitalize leading-normal text-[#191D39] !mt-4">Create videos as diverse as your audience </h1>
-              <Link href="#">
+              <Link href="#" className="hidden lg:block">
                 <button className="bg-primary-blue text-white rounded-2xl px-8 py-4 max-w-fit mx-auto !mt-8 hover:scale-110 transition duration-300">
                   See all avatars
                 </button>
               </Link>
             </div>
-            <div className="flex gap-x-5 !mt-8">
-              <div className="flex items-center gap-2 px-4 py-3 bg-white text-[#191D39] rounded-lg hover:shadow-2xl shadow-[#80808085] cursor-pointer transition duration-500">
-                <Image src="/icons/check.svg" alt="check" width={20} height={20} />{" "}
-                <span className="capitalize">
-                  Engage your viewers with <span className="font-semibold">over 140 AI Avatars</span>
-                </span>
+            <div className="flex flex-col items-center gap-y-4 gap-x-5 !mt-8">
+              <div className="flex flex-col sm:flex-row gap-y-4 gap-x-5 !mt-8">
+                <div className="flex items-center gap-2 px-4 py-3 bg-white text-[#191D39] rounded-lg hover:shadow-2xl shadow-[#80808085] cursor-pointer transition duration-500">
+                  <Image src="/icons/check.svg" alt="check" width={20} height={20} />{" "}
+                  <span className="capitalize">
+                    Engage your viewers with <span className="font-semibold">over 140 AI Avatars</span>
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 px-4 py-3 bg-white text-[#191D39] rounded-lg hover:shadow-2xl shadow-[#80808085] cursor-pointer transition duration-500">
+                  <Image src="/icons/check.svg" alt="check" width={20} height={20} />{" "}
+                  <span className="font-semibold">Make your videos more inclusive and diverse</span>
+                </div>
+                <div className="hidden lg:flex items-center gap-2 px-4 py-3 bg-white text-[#191D39] rounded-lg hover:shadow-2xl shadow-[#80808085] cursor-pointer transition duration-500">
+                  <Image src="/icons/check.svg" alt="check" width={20} height={20} />{" "}
+                  <span className="">
+                    Create your <span className="font-semibold">own AI Avatar</span> (your digital twin)
+                  </span>
+                </div>
               </div>
-              <div className="flex items-center gap-2 px-4 py-3 bg-white text-[#191D39] rounded-lg hover:shadow-2xl shadow-[#80808085] cursor-pointer transition duration-500">
-                <Image src="/icons/check.svg" alt="check" width={20} height={20} />{" "}
-                <span className="font-semibold">Make your videos more inclusive and diverse</span>
-              </div>
-              <div className="flex items-center gap-2 px-4 py-3 bg-white text-[#191D39] rounded-lg hover:shadow-2xl shadow-[#80808085] cursor-pointer transition duration-500">
+              <div className="flex lg:hidden max-w-fit items-center gap-2 px-4 py-3 bg-white text-[#191D39] rounded-lg hover:shadow-2xl shadow-[#80808085] cursor-pointer transition duration-500">
                 <Image src="/icons/check.svg" alt="check" width={20} height={20} />{" "}
                 <span className="">
                   Create your <span className="font-semibold">own AI Avatar</span> (your digital twin)
                 </span>
               </div>
             </div>
-            <div className="flex items-center mt-8">
-              <div className="w-full h-full relative rounded-3xl flex justify-center items-center overflow-hidden">
-                <Image src={dummyAiImages[0]} alt="" width={1000} height={1000} className="absolute inset-0" />
+            <div className="h-full grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 mt-8 gap-y-6 lg:gap-6">
+              <div className="w-full h-full relative rounded-3xl flex justify-center items-center overflow-hidden col-span-2 xl:col-span-3 min-h-[450px] lg:min-h-min">
+                <Image src={dummyAiImages[0]} alt="" fill objectFit="cover" />
                 <div className="relative z-[1]">
-                  <button className="rounded-full">
+                  <button className="rounded-full hover:scale-[1.2] transition duration-500">
                     <Image src="/icons/play.svg" alt="" width={80} height={80} />
                   </button>
                 </div>
               </div>
-              <div className="w-full max-w-[450px]">
-                <div className="grid grid-cols-2 gap-3">
+              <div className="h-full w-full lg:max-w-[400px]">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-2 gap-3">
                   {dummyAiImages.slice(1).map((image, index) => (
-                    <div key={index} className="relative group">
+                    <div key={index} className="relative group w-full h-full">
                       <Image src={image} alt="" width={400} height={400} />
-                      <div className="absolute w-[40px] h-[40px] bottom-2 right-2 z-[3] group-hover:scale-150 group-hover:-translate-y-[120%] group-hover:-translate-x-[195%] transition-all duration-300 delay-75">
+                      <div className="absolute w-[40px] h-[40px] z-[3] bottom-2 right-2 hover:scale-[1.2] transition-all duration-300 delay-75">
                         <button className="relative rounded-full">
                           <Image src="/icons/play.svg" alt="" width={40} height={40} />
                         </button>
                       </div>
-                      <div className="absolute inset-0 bg-black bg-opacity-60 z-1 opacity-0 group-hover:opacity-100 rounded-3xl transition-all duration-300" />
+                      <div className="absolute inset-0 bg-black bg-opacity-40 z-1 opacity-0 group-hover:opacity-100 rounded-3xl transition-all duration-300" />
                     </div>
                   ))}
                 </div>
               </div>
             </div>
+            <Link href="#" className="block lg:hidden mx-auto max-w-fit">
+              <button className="bg-primary-blue text-white rounded-2xl px-8 py-4 max-w-fit mx-auto !mt-8 hover:scale-110 transition duration-300">
+                See all avatars
+              </button>
+            </Link>
           </section>
           <section className="py-20 flex flex-col items-center space-y-8">
-            <h2 className="text-xl font-semibold">
+            <h2 className="font-semibold">
               <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">Supported Languages</span> <span>🔥</span>
             </h2>
             <h1 className="text-5xl font-bold max-w-2xl capitalize leading-normal text-center text-[#191D39] !mt-4">Multilingual </h1>
             <p>Ability to understand and generate content in different languages.</p>
             <div className="space-y-8 w-full max-w-[1460px] mx-auto !mt-10">
-              <div className="flex justify-center gap-20 w-full">
+              <div className="flex flex-wrap xl:flex-nowrap justify-center gap-y-8 gap-x-10 2xl:gap-x-20 w-full">
                 {languages.slice(0, 6).map(({ language, imageUrl }, index) => (
                   <div
                     key={index}
                     className="flex items-center gap-2 pt-4 pr-8 pb-4 pl-5  bg-white text-[#191D39] rounded-full hover:shadow-2xl transition duration-300 cursor-pointer">
-                    <Image src={imageUrl} alt="" width={40} height={40} />
-                    <p>{language}</p>
+                    <Image
+                      src={imageUrl}
+                      alt=""
+                      width={40}
+                      height={40}
+                      className="w-[20px] h-[20px] sm:w-[28px] sm:h-[28px] lg:w-[32px] lg:h-[32px] xl:w-[40px] xl:h-[40px]"
+                    />
+                    <p className="whitespace-nowrap">{language}</p>
                   </div>
                 ))}
               </div>
-              <div className="flex justify-center gap-20 w-full">
+              <div className="flex flex-wrap lg:flex-nowrap justify-center gap-y-8 gap-x-10 2xl:gap-x-20 w-full">
                 {languages.slice(6, 11).map(({ language, imageUrl }, index) => (
                   <div
                     key={index}
                     className="flex items-center gap-2 pt-4 pr-8 pb-4 pl-5  bg-white text-[#191D39] rounded-full hover:shadow-2xl transition duration-300 cursor-pointer">
-                    <Image src={imageUrl} alt="" width={40} height={40} />
-                    <p>{language}</p>
+                    <Image
+                      src={imageUrl}
+                      alt=""
+                      width={40}
+                      height={40}
+                      className="w-[20px] h-[20px] sm:w-[28px] sm:h-[28px] lg:w-[32px] lg:h-[32px] xl:w-[40px] xl:h-[40px]"
+                    />
+                    <p className="whitespace-nowrap">{language}</p>
                   </div>
                 ))}
               </div>
-              <div className="flex justify-center gap-20 w-full">
+              <div className="flex flex-wrap lg:flex-nowrap justify-center gap-y-8 gap-x-10 2xl:gap-x-20 w-full">
                 {languages.slice(11).map(({ language, imageUrl }, index) => (
                   <div
                     key={index}
                     className="flex items-center gap-2 pt-4 pr-8 pb-4 pl-5  bg-white text-[#191D39] rounded-full hover:shadow-2xl transition duration-300 cursor-pointer">
-                    <Image src={imageUrl} alt="" width={40} height={40} />
-                    <p>{language}</p>
+                    <Image
+                      src={imageUrl}
+                      alt=""
+                      width={40}
+                      height={40}
+                      className="w-[20px] h-[20px] sm:w-[28px] sm:h-[28px] lg:w-[32px] lg:h-[32px] xl:w-[40px] xl:h-[40px]"
+                    />
+                    <p className="whitespace-nowrap">{language}</p>
                   </div>
                 ))}
               </div>
             </div>
           </section>
-          <section className="mt-20 py-20">
-            <h2 className="text-xl font-semibold">
+          <section className="mt-8 py-20">
+            <h2 className="font-semibold">
               <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">Feedback</span> <span>🔥</span>
             </h2>
-            <div className="flex justify-between">
+            <div className="flex flex-col lg:flex-row justify-between">
               <div className="w-full">
                 <h1 className="text-5xl font-bold max-w-2xl capitalize leading-normal text-[#191D39] !mt-4">Our Featured Testimonials</h1>
               </div>
-              <div className="w-full flex justify-end mt-6">
-                <p className="text-[#191D39] max-w-xl leading-loose ">
+              <div className="w-full flex xl:justify-end mt-6">
+                <p className="text-[#191D39] xl:max-w-xl leading-loose ">
                   Lorem ipsum dolor sit amet consectetur. Ac in tortor sodales ipsum vel tortor. Egestas vitae elementum quam euismod nunc eros. Feugiat aliquam
                   augue.
                 </p>
@@ -367,7 +399,7 @@ export default function page() {
             </div>
           </section>
           <section className="mt-20 py-20 flex flex-col items-center space-y-12">
-            <h2 className="text-xl font-semibold">
+            <h2 className="font-semibold">
               <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5934FF] text-transparent bg-clip-text">INTEGRATIONS</span> <span>🔥</span>
             </h2>
             <h1 className="text-5xl font-bold max-w-2xl capitalize leading-normal text-center text-[#191D39] !mt-4">
