@@ -9,7 +9,7 @@ export function TooltipComponent({ tooltipContent, children }: Props) {
       <Tooltip>
         <TooltipTrigger asChild>{children}</TooltipTrigger>
         <TooltipContent>
-          <div className="text-white">{tooltipContent}</div>
+          <div className="text-primary-black">{tooltipContent}</div>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
