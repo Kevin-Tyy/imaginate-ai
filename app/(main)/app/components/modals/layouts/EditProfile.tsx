@@ -21,7 +21,7 @@ export default function EditProfile() {
   return (
     <div>
       <form className="space-y-8">
-        <div className="max-w-fit space-y-4">
+        <div className="max-w-fit space-y-6">
           <h1 className="font-semibold text-xl pb-4">PROFILE IMAGE</h1>
           <label htmlFor="profileImage" className="relative group w-24 h-24 rounded-lg overflow-hidden">
             <div className="w-24 h-24">
@@ -43,7 +43,7 @@ export default function EditProfile() {
           </label>
           <input
             id="email"
-            className="block h-[56px] placeholder:text-[#8F9BBA] outline-none bg-[#F5F5F7] px-4 w-full max-w-xl rounded-xl"
+            className="block h-[56px] placeholder:text-[#8F9BBA] outline-none bg-[#F5F5F7] px-4 w-full max-w-xl rounded-xl focus:ring-1 focus:ring-[#8F9BBA]/50 transition duration-500"
             placeholder="Enter email address"
           />
         </div>
@@ -54,7 +54,7 @@ export default function EditProfile() {
             </label>
             <input
               id="first-name"
-              className="block h-[56px] placeholder:text-[#8F9BBA] outline-none bg-[#F5F5F7] px-4 w-full max-w-xl rounded-xl"
+              className="block h-[56px] placeholder:text-[#8F9BBA] outline-none bg-[#F5F5F7] px-4 w-full max-w-xl rounded-xl focus:ring-1 focus:ring-[#8F9BBA]/50 transition duration-500"
               placeholder="Enter first name"
             />
           </div>
@@ -64,7 +64,7 @@ export default function EditProfile() {
             </label>
             <input
               id="last-name"
-              className="block h-[56px] placeholder:text-[#8F9BBA] outline-none bg-[#F5F5F7] px-4 w-full max-w-xl rounded-xl"
+              className="block h-[56px] placeholder:text-[#8F9BBA] outline-none bg-[#F5F5F7] px-4 w-full max-w-xl rounded-xl focus:ring-1 focus:ring-[#8F9BBA]/50 transition duration-500"
               placeholder="Enter last name"
             />
           </div>

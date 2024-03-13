@@ -14,8 +14,8 @@ export default function page() {
           <DateTime />
         </div>
         <div className="bg-white rounded-full flex items-center gap-5 p-2 pl-3 cursor-pointer transition-all duration-500 hover:shadow-md">
-          <div className="p-2 hover:bg-primary-grey/10 rounded-full transition duration-500">
-            <Image src="/icons/notifications_none.svg" alt="" width={30} height={30} />
+          <div className="p-2.5 hover:bg-primary-grey/10 rounded-full transition duration-500">
+            <Image src="/icons/notifications_none.svg" alt="" width={32} height={32} />
           </div>
           <ProfileButton />
         </div>

@@ -24,7 +24,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, maxWidth }) =>
           leave="ease-in duration-200"
           leaveFrom="opacity-100"
           leaveTo="opacity-0">
-          <div className="fixed inset-0 bg-black bg-opacity-75 transition-opacity" />
+          <div className="fixed inset-0 bg-black bg-opacity-60 transition-opacity" />
         </Transition.Child>
 
         <div className="fixed inset-0 z-10 overflow-y-auto">
@@ -39,11 +39,11 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, maxWidth }) =>
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
               <Dialog.Panel
                 className={clsx(
-                  "relative overflow-hidden rounded-lg modal-shadow bg-white transition-all w-full sm:my-8 sm:w-full max-w-6xl",
-                  maxWidth && `max-w-[${maxWidth}px]`
+                  "relative overflow-hidden rounded-3xl modal-shadow bg-white transition-all w-full sm:my-8 sm:w-full",
+                  maxWidth ? `max-w-[684px]` : "!max-w-6xl"
                 )}>
                 <div className="absolute right-0 top-0 p-2">
-                  <button type="button" className="rounded-md hover:bg-[#DB4446]/20 p-1.5 outline-none transition-all duration-300" onClick={onClose}>
+                  <button type="button" className="rounded-full hover:bg-[#DB4446]/20 p-1.5 outline-none transition-all duration-300" onClick={onClose}>
                     <span className="sr-only">Close</span>
                     <IoClose className="h-7 w-7 text-[#DB4446]" aria-hidden="true" />
                   </button>

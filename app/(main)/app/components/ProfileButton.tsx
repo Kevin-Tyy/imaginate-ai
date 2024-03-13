@@ -8,7 +8,7 @@ export default function ProfileButton() {
   return (
     <Fragment>
       <button className="outline-none hover:opacity-80" onClick={() => setIsUserProfileModalOpen(true)}>
-        <Image src="/dummy-avatar.png" alt="" width={44} height={44} className="w-[50px] h-[50px] object-cover rounded-full" />
+        <Image src="/dummy-avatar.png" alt="" width={44} height={44} className="w-[50px] h-[50px] min-w-[50px] max-h-[50px] object-cover rounded-full" />
       </button>
       <UserSettings isOpen={isUserProfileModalOpen} onClose={() => setIsUserProfileModalOpen(false)} />
     </Fragment>
