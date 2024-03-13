@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { HiArrowUp } from "react-icons/hi";
+import ProfileButton from "../components/ProfileButton";
 
 export default function page() {
   return (
@@ -12,11 +13,11 @@ export default function page() {
         <div className="w-full flex justify-center">
           <DateTime />
         </div>
-        <div className="bg-white rounded-full flex gap-4 p-2 pl-3 cursor-pointer transition-all duration-500 hover:shadow-md">
+        <div className="bg-white rounded-full flex items-center gap-5 p-2 pl-3 cursor-pointer transition-all duration-500 hover:shadow-md">
           <div className="p-2 hover:bg-primary-grey/10 rounded-full transition duration-500">
             <Image src="/icons/notifications_none.svg" alt="" width={30} height={30} />
           </div>
-          <Image src="/dummy-avatar.png" alt="" width={44} height={44} className="w-[50px] h-[50px] object-cover rounded-full" />
+          <ProfileButton />
         </div>
       </nav>
       <main className="w-full flex flex-col lg:flex-row gap-10 max-w-[1680px] mx-auto">

@@ -2,6 +2,7 @@ import { TooltipComponent } from "@/components/TooltipComponent";
 import { useSidebarExpandedState as useExpandedState } from "@/hooks/useSidebarExpandedState";
 import clsx from "clsx";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function SidebarCategoryBox({ category, isExpanded }: { category: SidebarCategoryType; isExpanded: boolean }) {
@@ -11,11 +12,13 @@ export default function SidebarCategoryBox({ category, isExpanded }: { category:
       <div className={clsx("bg-white rounded-[20px]", !isExpanded && "hover:bg-[#78748615] !rounded-xl mx-1.5 ")}>
         <div>
           {links.map(({ alternateIcon, icon, link, title }, index) => (
-            <TooltipComponent tooltipContent={title}>
-              <div key={index} className={clsx("flex gap-x-3 px-7 py-[18px] cursor-pointer transition-all duration-500", !isExpanded && "!px-[18px]")}>
-                <Image src={icon} alt={title} width={24} height={24} className="min-w-[24px]" />
-                <h1 className={clsx("whitespace-nowrap transition-all duration-500", !isExpanded && "!opacity-0")}>{title}</h1>
-              </div>
+            <TooltipComponent tooltipContent={title} key={index}>
+              <Link href={link}>
+                <div className={clsx("flex gap-x-3 px-7 py-[18px] cursor-pointer transition-all duration-500", !isExpanded && "!px-[18px]")}>
+                  <Image src={icon} alt={title} width={24} height={24} className="min-w-[24px]" />
+                  <h1 className={clsx("whitespace-nowrap transition-all duration-500", !isExpanded && "!opacity-0")}>{title}</h1>
+                </div>
+              </Link>
             </TooltipComponent>
           ))}
         </div>
@@ -44,11 +47,13 @@ export default function SidebarCategoryBox({ category, isExpanded }: { category:
         )}
         <div className={clsx(links.length > 1 && "mt-8 flex flex-col")}>
           {links.map(({ alternateIcon, icon, link, title }, index) => (
-            <TooltipComponent tooltipContent={title}>
-              <div key={index} className="flex gap-x-4 p-4 hover:bg-[#78748615] rounded-xl cursor-pointer transition duration-300">
-                <Image src={icon} alt={title} width={24} height={24} className="min-w-[24px]" />
-                <h1 className={clsx("whitespace-nowrap transition-all duration-500", !isExpanded && "!opacity-0")}>{title}</h1>
-              </div>
+            <TooltipComponent tooltipContent={title} key={index}>
+              <Link href={link}>
+                <div className="flex gap-x-4 p-4 hover:bg-[#78748615] rounded-xl cursor-pointer transition duration-300">
+                  <Image src={icon} alt={title} width={24} height={24} className="min-w-[24px]" />
+                  <h1 className={clsx("whitespace-nowrap transition-all duration-500", !isExpanded && "!opacity-0")}>{title}</h1>
+                </div>
+              </Link>
             </TooltipComponent>
           ))}
         </div>

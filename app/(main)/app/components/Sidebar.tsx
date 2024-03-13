@@ -11,20 +11,8 @@ import SidebarCategoryBox from "./SidebarCategoryBox";
 
 export default function Sidebar() {
   const { isExpanded, expand, collapse, toggle } = useExpandedState();
-  const sidebarRef = useRef<HTMLDivElement | null>(null);
-  const handleOutsideClick = (e: any) => {
-    if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
-      collapse();
-    }
-  };
-  useEffect(() => {
-    document.addEventListener("mousedown", handleOutsideClick);
-    return () => {
-      document.addEventListener("mousedown", handleOutsideClick);
-    };
-  });
   return (
-    <div ref={sidebarRef} className="h-screen z-20 no-scrollbar relative sidebar">
+    <div className="h-screen z-20 no-scrollbar relative sidebar">
       <TooltipComponent tooltipContent={isExpanded ? "Close sidebar" : "Open sidebar"}>
         <div
           className={clsx("shadow-md p-2.5 grid place-content-center absolute top-6 -right-6 overflow-hidden bg-white rounded-full cursor-pointer z-[999999]")}
@@ -48,7 +36,7 @@ export default function Sidebar() {
         <div
           className={clsx(
             "box-border h-full transition-all ease-in-out duration-500 w-[320px] absolute lg:relative z-[99999]",
-            !isExpanded && "w-[0px] sm:!w-[98px]"
+            !isExpanded && "sm:!w-[98px]"
           )}>
           <div className={clsx("w-full h-full min-h-screen flex flex-col justify-between overflow-x-hidden py-4 px-3 no-scrollbar")}>
             <Image src={"/logo/imaginate.svg"} alt="imaginate" height={80} width={80} className={`w-36 max-h-16 !min-w-36`} />{" "}
