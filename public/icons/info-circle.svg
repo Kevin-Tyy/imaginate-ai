@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="info-circle">
+<g id="Oval">
+<circle cx="12" cy="12" r="9" stroke="#343434" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="12" cy="12" r="9" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path">
+<path d="M12.0009 8H12.0109" stroke="#343434" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.0009 8H12.0109" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path_2">
+<path d="M11 12H12V16H13" stroke="#343434" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 12H12V16H13" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

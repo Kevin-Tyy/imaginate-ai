@@ -17,7 +17,7 @@ const config = {
         "primary-purple": "#CE4FFF",
         "primary-blue": "#5A34FF",
         "primary-black": "#191D39",
-        "primary-grey": "#848199",
+        "primary-grey": "#918EA4",
         "primary-warning": "#FBA91D",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

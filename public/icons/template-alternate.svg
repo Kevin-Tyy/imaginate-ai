@@ -1,0 +1,24 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="template">
+<g id="Rectangle">
+<rect x="5" y="5" width="20" height="5" rx="1.25" stroke="white" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="5" y="5" width="20" height="5" rx="1.25" stroke="white" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Rectangle_2">
+<rect x="5" y="15" width="7.5" height="10" rx="1.25" stroke="white" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="5" y="15" width="7.5" height="10" rx="1.25" stroke="white" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path">
+<path d="M17.5 15H25" stroke="white" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.5 15H25" stroke="white" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path_2">
+<path d="M17.5 20H25" stroke="white" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.5 20H25" stroke="white" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path_3">
+<path d="M17.5 25H25" stroke="white" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.5 25H25" stroke="white" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

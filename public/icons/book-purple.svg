@@ -1,0 +1,24 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="book">
+<g id="Path">
+<path d="M3.75 23.75C7.23076 21.7404 11.5192 21.7404 15 23.75C18.4808 21.7404 22.7692 21.7404 26.25 23.75" stroke="#5A34FF" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.75 23.75C7.23076 21.7404 11.5192 21.7404 15 23.75C18.4808 21.7404 22.7692 21.7404 26.25 23.75" stroke="white" stroke-opacity="0.2" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path_2">
+<path d="M3.75 7.50001C7.23076 5.49039 11.5192 5.49039 15 7.50001C18.4808 5.49039 22.7692 5.49039 26.25 7.50001" stroke="#5A34FF" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.75 7.50001C7.23076 5.49039 11.5192 5.49039 15 7.50001C18.4808 5.49039 22.7692 5.49039 26.25 7.50001" stroke="white" stroke-opacity="0.2" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path_3">
+<path d="M3.75 7.5V23.75" stroke="#5A34FF" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.75 7.5V23.75" stroke="white" stroke-opacity="0.2" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path_4">
+<path d="M15 7.5V23.75" stroke="#5A34FF" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 7.5V23.75" stroke="white" stroke-opacity="0.2" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path_5">
+<path d="M26.25 7.5V23.75" stroke="#5A34FF" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.25 7.5V23.75" stroke="white" stroke-opacity="0.2" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

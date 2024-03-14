@@ -2,7 +2,7 @@ export const sidebarLinks: SidebarCategoryType[] = [
   {
     categoryName: null,
     alternateCategoryName: null,
-    links: [{ icon: "/icons/category.svg", alternateIcon: "/icon/category-alternate.svg", link: "/app/home", title: "Home" }],
+    links: [{ icon: "/icons/category.svg", alternateIcon: "/icons/category-alternate.svg", link: "/app/home", title: "Home" }],
   },
   {
     categoryName: "Text to Videos",
@@ -16,8 +16,8 @@ export const sidebarLinks: SidebarCategoryType[] = [
     categoryName: "Assets",
     alternateCategoryName: "Assets",
     links: [
-      { icon: "/icons/book.svg", alternateIcon: "/icons/book-alternate.svg", link: "/app/library", title: "Library" },
-      { icon: "/icons/user-circle.svg", alternateIcon: "/icons/user-circle-alternate.svg", link: "/app/avatars", title: "Avatars" },
+      { icon: "/icons/book.svg", alternateIcon: "/icons/book-alternate.svg", link: "/app/assets/library", title: "Library" },
+      { icon: "/icons/user-circle.svg", alternateIcon: "/icons/user-circle-alternate.svg", link: "/app/assets/avatars", title: "Avatars" },
     ],
   },
   {
@@ -31,6 +31,6 @@ export const sidebarLinks: SidebarCategoryType[] = [
   {
     categoryName: null,
     alternateCategoryName: null,
-    links: [{ icon: "/icons/settings.svg", alternateIcon: "/icon/settings-alternate.svg", link: "/settings", title: "Settings" }],
+    links: [{ icon: "/icons/settings.svg", alternateIcon: "/icons/settings-alternate.svg", link: "/app/settings", title: "Settings" }],
   },
 ];

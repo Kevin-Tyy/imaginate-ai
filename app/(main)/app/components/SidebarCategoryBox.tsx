@@ -4,9 +4,12 @@ import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { usePathname } from "next/navigation";
 
 export default function SidebarCategoryBox({ category, isExpanded }: { category: SidebarCategoryType; isExpanded: boolean }) {
   const { categoryName, alternateCategoryName, links } = category;
+  const pathname = usePathname();
+
   if (!categoryName)
     return (
       <div className={clsx("bg-white rounded-[20px]", !isExpanded && "hover:bg-[#78748615] !rounded-xl mx-1.5 ")}>
@@ -14,8 +17,13 @@ export default function SidebarCategoryBox({ category, isExpanded }: { category:
           {links.map(({ alternateIcon, icon, link, title }, index) => (
             <TooltipComponent tooltipContent={title} key={index}>
               <Link href={link}>
-                <div className={clsx("flex gap-x-3 px-7 py-[18px] cursor-pointer transition-all duration-500", !isExpanded && "!px-[18px]")}>
-                  <Image src={icon} alt={title} width={24} height={24} className="min-w-[24px]" />
+                <div
+                  className={clsx(
+                    "flex gap-x-3 px-7 py-[18px] rounded-[20px] cursor-pointer transition-all duration-500",
+                    !isExpanded && "!px-[18px] rounded-xl",
+                    pathname === link && "bg-gradient-to-r from-primary-purple to-primary-blue text-white"
+                  )}>
+                  <Image src={pathname === link ? alternateIcon : icon} alt={title} width={24} height={24} className="min-w-[24px]" />
                   <h1 className={clsx("whitespace-nowrap transition-all duration-500", !isExpanded && "!opacity-0")}>{title}</h1>
                 </div>
               </Link>
@@ -45,12 +53,16 @@ export default function SidebarCategoryBox({ category, isExpanded }: { category:
             </h2>
           </div>
         )}
-        <div className={clsx(links.length > 1 && "mt-8 flex flex-col")}>
+        <div className={clsx(links.length > 1 && "mt-8 flex flex-col space-y-1")}>
           {links.map(({ alternateIcon, icon, link, title }, index) => (
             <TooltipComponent tooltipContent={title} key={index}>
               <Link href={link}>
-                <div className="flex gap-x-4 p-4 hover:bg-[#78748615] rounded-xl cursor-pointer transition duration-300">
-                  <Image src={icon} alt={title} width={24} height={24} className="min-w-[24px]" />
+                <div
+                  className={clsx(
+                    "flex gap-x-4 p-4 hover:bg-[#78748615] rounded-xl cursor-pointer transition duration-300",
+                    pathname === link && "bg-gradient-to-r from-primary-purple to-primary-blue text-white"
+                  )}>
+                  <Image src={pathname === link ? alternateIcon : icon} alt={title} width={24} height={24} className="min-w-[24px]" />
                   <h1 className={clsx("whitespace-nowrap transition-all duration-500", !isExpanded && "!opacity-0")}>{title}</h1>
                 </div>
               </Link>

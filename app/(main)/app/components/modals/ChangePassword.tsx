@@ -7,7 +7,7 @@ interface Props {
 }
 const ChangePassword: FC<Props> = ({ isOpen, onClose }) => {
   return (
-    <Modal isOpen={isOpen} onClose={onClose} maxWidth={684}>
+    <Modal isOpen={isOpen} onClose={onClose} maxWidth="max-w-[684px]">
       <div className="w-full px-10 py-16 space-y-6 max-w-[620px] mx-auto">
         <h1 className="text-3xl font-semibold text-center">Update your password</h1>
         <p className="text-center">Enter your current password and a new password</p>

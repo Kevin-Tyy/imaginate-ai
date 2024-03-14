@@ -1,11 +1,11 @@
 import React from "react";
-import Navmenu from "./components/Navmenu";
+import Navmenu from "../components/Navmenu";
 
 export default function layout({ children }: { children: React.ReactNode }) {
   return (
-    <div>
+    <div className="flex flex-col h-full w-full">
       <Navmenu />
-      {children}
+      <div className="flex-1 h-full">{children}</div>
     </div>
   );
 }

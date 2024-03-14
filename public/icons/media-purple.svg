@@ -1,0 +1,20 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="photo">
+<g id="Path">
+<path d="M18.7496 10H18.7621" stroke="#5A34FF" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.7496 10H18.7621" stroke="#5A34FF" stroke-opacity="0.2" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Rectangle">
+<rect x="5" y="5" width="20" height="20" rx="3.75" stroke="#5A34FF" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="5" y="5" width="20" height="20" rx="3.75" stroke="#5A34FF" stroke-opacity="0.2" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path_2">
+<path d="M5 18.7499L10 13.7499C11.1603 12.6335 12.5897 12.6335 13.75 13.7499L20 19.9999" stroke="#5A34FF" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 18.7499L10 13.7499C11.1603 12.6335 12.5897 12.6335 13.75 13.7499L20 19.9999" stroke="#5A34FF" stroke-opacity="0.2" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path_3">
+<path d="M17.5 17.4999L18.75 16.2499C19.9103 15.1335 21.3397 15.1335 22.5 16.2499L25 18.7499" stroke="#5A34FF" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.5 17.4999L18.75 16.2499C19.9103 15.1335 21.3397 15.1335 22.5 16.2499L25 18.7499" stroke="#5A34FF" stroke-opacity="0.2" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

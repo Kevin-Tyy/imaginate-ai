@@ -1,13 +1,11 @@
 "use client";
 
 import { TooltipComponent } from "@/components/TooltipComponent";
-import Logo from "@/components/shared/Logo";
 import { useSidebarExpandedState as useExpandedState } from "@/hooks/useSidebarExpandedState";
 import clsx from "clsx";
 import Image from "next/image";
-import React, { useEffect, useRef } from "react";
-import { sidebarLinks } from "./constants/NavMenuData";
 import SidebarCategoryBox from "./SidebarCategoryBox";
+import { sidebarLinks } from "./constants/NavMenuData";
 
 export default function Sidebar() {
   const { isExpanded, expand, collapse, toggle } = useExpandedState();
@@ -34,12 +32,9 @@ export default function Sidebar() {
           isExpanded && "!bg-[#EAF0FF] shadow-2xl"
         )}>
         <div
-          className={clsx(
-            "box-border h-full transition-all ease-in-out duration-500 w-[320px] absolute lg:relative z-[99999]",
-            !isExpanded && "sm:!w-[98px]"
-          )}>
+          className={clsx("box-border h-full transition-all ease-in-out duration-500 w-[320px] absolute lg:relative z-[99999]", !isExpanded && "sm:!w-[98px]")}>
           <div className={clsx("w-full h-full min-h-screen flex flex-col justify-between overflow-x-hidden py-4 px-3 no-scrollbar")}>
-            <Image src={"/logo/imaginate.svg"} alt="imaginate" height={80} width={80} className={`w-36 max-h-16 !min-w-36`} />{" "}
+            <Image src={"/logo/imaginate.svg"} alt="imaginate" height={80} width={80} className={`w-36 max-h-14 !min-w-36`} />{" "}
             <div className={clsx("space-y-3 flex-1 mt-16")}>
               {sidebarLinks.map((category, index) => (
                 <SidebarCategoryBox category={category} key={index} isExpanded={isExpanded} />
