@@ -2,15 +2,16 @@
 
 import DateTime from "@/components/DateTime";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import { HiSearch } from "react-icons/hi";
 import ProfileButton from "./ProfileButton";
-import NotificationDropdown from "./dropdowns/NotificationDropdown";
-import { IoMdNotificationsOutline } from "react-icons/io";
-import clsx from "clsx";
+
+import { usePathname } from "next/navigation";
+import NotificationButton from "./NotificationButton";
+import Link from "next/link";
 
 export default function Navmenu() {
-  const [notificationPopupOpen, setIsNotificationPopupOpen] = useState(false);
+  const pathname = usePathname();
   return (
     <nav className="flex items-center justify-between pt-6 px-6">
       <div className="w-full">
@@ -26,14 +27,12 @@ export default function Navmenu() {
             <input className="h-[48px] placeholder:text-[#8F9BBA] outline-none bg-transparent" placeholder="Search Videos" />
           </div>
           <div className="flex items-center gap-3">
-            <div className="p-2 hover:bg-primary-grey/10 rounded-full transition duration-500">
-              <Image src="/icons/message-question.svg" alt="" width={30} height={30} />
-            </div>
-            <NotificationDropdown setIsOpen={setIsNotificationPopupOpen}>
+            <Link href="/app/faq">
               <div className="p-2 hover:bg-primary-grey/10 rounded-full transition duration-500">
-                <IoMdNotificationsOutline size={28} className={clsx(notificationPopupOpen ? "text-primary-blue" : "text-[#A3AED0]")} />
+                <Image src={pathname === "/app/faq" ? "/icons/message-question-purple.svg" : "/icons/message-question.svg"} alt="" width={28} height={28} />
               </div>
-            </NotificationDropdown>
+            </Link>
+            <NotificationButton />
           </div>
           <ProfileButton />
         </div>

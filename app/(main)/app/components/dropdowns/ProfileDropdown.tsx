@@ -4,9 +4,10 @@ import {
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuSeparator,
-  DropdownMenuTrigger
+  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
+import Link from "next/link";
 
 export function ProfileDropdown({ children, openModal }: { children: React.ReactNode; openModal: () => void }) {
   return (
@@ -35,10 +36,12 @@ export function ProfileDropdown({ children, openModal }: { children: React.React
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuItem className="flex gap-3">
-          <Image src="/icons/info-circle.svg" alt="" width={22} height={22} />
-          FAQ
-        </DropdownMenuItem>
+        <Link href="/app/faq">
+          <DropdownMenuItem className="flex gap-3">
+            <Image src="/icons/info-circle.svg" alt="" width={22} height={22} />
+            FAQ
+          </DropdownMenuItem>
+        </Link>
         <DropdownMenuSeparator />
         <button className="relative flex select-none items-center rounded-lg p-4 outline-none  w-full gap-3 text-[#D9000B] hover:bg-[#D9000B]/10 cursor-pointer">
           <Image src="/icons/logout.svg" alt="" width={22} height={22} />

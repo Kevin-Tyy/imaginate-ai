@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { HiArrowUp } from "react-icons/hi";
 import ProfileButton from "../components/ProfileButton";
+import NotificationButton from "../components/NotificationButton";
 
 export default function page() {
   return (
@@ -15,7 +16,7 @@ export default function page() {
         </div>
         <div className="bg-white rounded-full flex items-center gap-5 p-2 pl-3 cursor-pointer transition-all duration-500 hover:shadow-md">
           <div className="p-2.5 hover:bg-primary-grey/10 rounded-full transition duration-500">
-            <Image src="/icons/notifications_none.svg" alt="" width={32} height={32} />
+            <NotificationButton />
           </div>
           <ProfileButton />
         </div>
