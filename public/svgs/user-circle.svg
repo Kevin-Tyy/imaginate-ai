@@ -1,0 +1,30 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="user-circle">
+<g id="Oval">
+<circle cx="15" cy="15" r="11.25" stroke="url(#paint0_linear_246_1399)" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="15" cy="15" r="11.25" stroke="#787486" stroke-opacity="0.2" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Oval_2">
+<circle cx="15" cy="12.5" r="3.75" stroke="url(#paint1_linear_246_1399)" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="15" cy="12.5" r="3.75" stroke="#787486" stroke-opacity="0.2" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path">
+<path d="M7.71094 23.5613C8.34623 21.4468 10.2931 19.9994 12.5009 20H17.5009C19.7117 19.9992 21.6606 21.4505 22.2934 23.5688" stroke="url(#paint2_linear_246_1399)" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.71094 23.5613C8.34623 21.4468 10.2931 19.9994 12.5009 20H17.5009C19.7117 19.9992 21.6606 21.4505 22.2934 23.5688" stroke="#787486" stroke-opacity="0.2" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_246_1399" x1="15" y1="3.75" x2="15" y2="26.25" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5A34FF"/>
+<stop offset="1" stop-color="#5A34FF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_246_1399" x1="15" y1="8.75" x2="15" y2="16.25" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5A34FF"/>
+<stop offset="1" stop-color="#5A34FF"/>
+</linearGradient>
+<linearGradient id="paint2_linear_246_1399" x1="15.0022" y1="20" x2="15.0022" y2="23.5688" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5A34FF"/>
+<stop offset="1" stop-color="#5A34FF"/>
+</linearGradient>
+</defs>
+</svg>
