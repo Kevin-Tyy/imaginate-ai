@@ -2,7 +2,7 @@ export const sidebarLinks: SidebarCategoryType[] = [
   {
     categoryName: null,
     alternateCategoryName: null,
-    links: [{ icon: "/icons/category.svg", alternateIcon: "/icons/category-alternate.svg", link: "/app/home", title: "Home" }],
+    links: [{ icon: "/icons/category.svg", alternateIcon: "/icons/category-alternate.svg", link: "/app", title: "Home" }],
   },
   {
     categoryName: "Text to Videos",

@@ -25,7 +25,7 @@ export default function page() {
     });
   };
   return (
-    <main className="mt-10 px-6">
+    <main className="mt-10">
       <div className="w-full flex gap-x-4 items-center">
         <div className="p-2 bg-white border-gradient-blue-to-gray-to-b-sm rounded-[8px] cursor-pointer hover:shadow transition duration-500">
           <Image src="/icons/bulb-purple.svg" alt="" width={25} height={25} className=" relative z-[1]" />
@@ -33,7 +33,7 @@ export default function page() {
         <span className="text-2xl text-primary-blue font-semibold">Custom Avatars FAQ</span>
       </div>
       <div className="flex flex-col lg:flex-row items-start gap-[20px] mt-10">
-        <section className="bg-[#FFF] p-5 mx-3 lg:mx-0 lg:mr-3 lg:w-2/5 xl:max-w-[400px] rounded-[20px] border-gradient-blue-to-gray-to-b">
+        <section className="bg-[#FFF] p-5 w-full lg:w-2/5 xl:max-w-[400px] rounded-[20px] border-gradient-blue-to-gray-to-b">
           <div className="relative z-[1]">
             {faqData.map((item, i) => (
               <div

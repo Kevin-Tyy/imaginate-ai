@@ -9,10 +9,11 @@ interface ModalProps {
   isOpen?: boolean;
   onClose: () => void;
   maxWidth?: string;
+  fullWidth?: boolean;
   children: React.ReactNode;
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, maxWidth }) => {
+const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, maxWidth, fullWidth }) => {
   return (
     <Transition.Root show={isOpen} as={Fragment}>
       <Dialog as="div" className="relative z-50" onClose={onClose}>
@@ -40,15 +41,16 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, maxWidth }) =>
               <Dialog.Panel
                 className={clsx(
                   "relative overflow-hidden rounded-3xl modal-shadow bg-white transition-all w-full sm:my-8 sm:w-full",
-                  maxWidth ? maxWidth : "!max-w-[1184px]"
+                  maxWidth ? maxWidth : "!max-w-[1184px]",
+                  fullWidth ? "w-full !max-w-[92%] h-[90vh]" : "!max-w-[1184px]"
                 )}>
-                <div className="absolute right-0 top-0 p-4">
+                <div className="absolute right-0 top-0 p-4 z-50">
                   <button type="button" className="rounded-full hover:bg-[#DB4446]/20 p-1.5 outline-none transition-all duration-300" onClick={onClose}>
                     <span className="sr-only">Close</span>
                     <IoClose className="h-7 w-7 text-[#DB4446]" aria-hidden="true" />
                   </button>
                 </div>
-                {children}
+                <div className="overflow-y-scroll no-scrollbar h-full">{children}</div>
               </Dialog.Panel>
             </Transition.Child>
           </div>

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import clsx from "clsx";
-import NotificationDropdown from "./dropdowns/NotificationDropdown";
+import NotificationDropdown from "../modals/dropdowns/NotificationDropdown";
 export default function NotificationButton() {
   const [notificationPopupOpen, setIsNotificationPopupOpen] = useState(false);
 

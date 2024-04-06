@@ -91,6 +91,11 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
+.swiper-wrapper {
+  padding-block-start: 20px;
+  padding-block-end: 40px;
+}
 .border-gradient {
   position: relative;
   border-radius: 12px;
@@ -168,8 +173,27 @@
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
+
+.border-gradient-blue-to-gray-to-r {
+  position: relative;
+  box-shadow: 0px 4.206px 2.214px 0px rgba(90, 52, 255, 0.05), 0px 10.108px 5.32px 0px rgba(90, 52, 255, 0.04),
+    0px 19.033px 10.017px 0px rgba(90, 52, 255, 0.03), 0px 33.951px 17.869px 0px rgba(90, 52, 255, 0.03), 0px 63.502px 33.422px 0px rgba(90, 52, 255, 0.02),
+    0px 152px 80px 0px rgba(90, 52, 255, 0.01);
+}
+.border-gradient-blue-to-gray-to-r::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  padding: 1px;
+  background: linear-gradient(90deg, #5a34ff, #5a34ff50, #ffffff00);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
 .custom-transition {
-  transition: left cubic-bezier(0.88, -0.35, 0.565, 1.35) 0.4s;
+  transition: left cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
 }
 
 .border-gradient-no-shadow {
@@ -182,6 +206,70 @@
   border-radius: 20px;
   padding: 1px;
   background: linear-gradient(180deg, #5a34ff, #5a34ff50, #ffffff00);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.hover-card {
+  position: relative;
+}
+.hover-card:before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(180deg, #5a34ff, #5a34ff50, #ffffff00);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.hover-card:hover::before {
+  opacity: 1;
+  transition: all 1s;
+}
+.hover-card:hover {
+  transition: all 500ms;
+  box-shadow: 0px 30px 80px 0px rgba(90, 52, 255, 0.07), 0px 41.778px 33.422px 0px rgba(90, 52, 255, 0.05), 0px 22.336px 17.869px 0px rgba(90, 52, 255, 0.04),
+    0px 12.522px 10.017px 0px rgba(90, 52, 255, 0.04), 0px 6.65px 5.32px 0px rgba(90, 52, 255, 0.03), 0px 2.767px 2.214px 0px rgba(90, 52, 255, 0.02);
+}
+.hover-card-sm {
+  position: relative;
+}
+.hover-card-sm:before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 2px;
+  background: linear-gradient(300deg, #5a34ff, #5a34ff50, #ffffff00);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.hover-card-sm:hover::before {
+  opacity: 1;
+  transition: all 1s;
+}
+.hover-card-sm:hover {
+  transition: all 500ms;
+  box-shadow: 0px 30px 80px 0px rgba(90, 52, 255, 0.07), 0px 41.778px 33.422px 0px rgba(90, 52, 255, 0.05), 0px 22.336px 17.869px 0px rgba(90, 52, 255, 0.04),
+    0px 12.522px 10.017px 0px rgba(90, 52, 255, 0.04), 0px 6.65px 5.32px 0px rgba(90, 52, 255, 0.03), 0px 2.767px 2.214px 0px rgba(90, 52, 255, 0.02);
+}
+
+.composition-dropzone {
+  position: relative;
+}
+.composition-dropzone:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 1px;
+  background: linear-gradient(300deg, #5a34ff, #5a34ff50, #ffffff00);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;

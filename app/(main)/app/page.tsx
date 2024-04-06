@@ -3,15 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { HiArrowUp } from "react-icons/hi";
-import ProfileButton from "../components/ProfileButton";
-import NotificationButton from "../components/NotificationButton";
+import ProfileButton from "./components/buttons/ProfileButton";
+import NotificationButton from "./components/buttons/NotificationButton";
 
 export default function page() {
   return (
     <div className="h-full flex flex-col justify-between space-y-20">
-      <nav className="flex items-center justify-between pt-6 px-6">
-        <div />
-        <div className="w-full flex justify-center">
+      <nav className="flex items-center justify-between pt-4 pl-4">
+        <div className="hidden lg:block" />
+        <div className="w-full flex xl:justify-center">
           <DateTime />
         </div>
         <div className="bg-white rounded-full flex items-center gap-5 p-2 pl-3 cursor-pointer transition-all duration-500 hover:shadow-md">
@@ -19,7 +19,7 @@ export default function page() {
           <ProfileButton />
         </div>
       </nav>
-      <main className="w-full flex flex-col lg:flex-row gap-10 max-w-[1680px] mx-auto">
+      <main className="w-full flex flex-col xl:flex-row gap-10 max-w-[1680px] mx-auto">
         <div className="relative w-full p-6 rounded-[40px] bg-white hover:shadow-2xl transition-all duration-700">
           <div className="bg-gradient-to-br from-[#9063bb] to-[#736BFF] rounded-full p-6 max-w-fit border-[6px] border-white absolute right-2 top-2 z-[2]">
             <HiArrowUp size={54} className="rotate-[45deg] text-white" />
@@ -37,7 +37,7 @@ export default function page() {
                 Lorem ipsum dolor sit amet consectetur. Nullam ullamcorper urna nunc tristique. Mi id nisl nulla montes. Phasellus diam risus fringilla
                 consectetur enim varius. Metus lectus leo dolor.
               </p>
-              <Link href="#" className="mx-auto max-w-fit">
+              <Link href="/app/videos" className="mx-auto max-w-fit">
                 <button className="text-lg bg-gradient-to-r from-primary-blue to-primary-purple text-white rounded-2xl px-8 py-4 max-w-fit mx-auto hover:scale-110 transition duration-300">
                   Get into Videos World
                 </button>
@@ -80,7 +80,7 @@ export default function page() {
                 Lorem ipsum dolor sit amet consectetur. Nullam ullamcorper urna nunc tristique. Mi id nisl nulla montes. Phasellus diam risus fringilla
                 consectetur enim varius. Metus lectus leo dolor.
               </p>
-              <Link href="#">
+              <Link href="/app/images">
                 <button className="py-4 px-8 outline-none bg-transparent border-gradient text-[#5A34FF] rounded-xl hover:scale-110 transition duration-500">
                   <span className="bg-gradient-to-r from-[#CE4FFF] to-[#5A34FF] bg-clip-text text-transparent">Get into AI Product World</span>
                 </button>

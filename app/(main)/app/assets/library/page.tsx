@@ -4,7 +4,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className="px-6 flex flex-col h-full">
+    <div className="flex flex-col h-full">
       <div className="flex justify-between pt-8 pb-5 border-b border-[black]/10">
         <div className="w-full flex gap-x-3 items-center">
           <div className="p-2 bg-white border-gradient-blue-to-gray-to-b-sm rounded-[8px] cursor-pointer hover:shadow transition duration-500">
@@ -13,7 +13,7 @@ export default function page() {
           <span className="text-2xl text-primary-blue font-semibold">Library</span>
         </div>
       </div>
-      <main className="grid grid-cols-2 gap-10 mt-14">
+      <main className="grid grid-cols-1 xl:grid-cols-2 gap-10 mt-14">
         <Link
           href="/app/assets/library/media"
           className="border-gradient-no-shadow p-8 bg-transparent hover:bg-white rounded-[20px] transition duration-500 group">

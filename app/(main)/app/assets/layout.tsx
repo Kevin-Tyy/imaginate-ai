@@ -5,7 +5,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex flex-col h-full w-full">
       <Navmenu />
-      <div className="flex-1 w-full h-screen max-h-screen overflow-y-auto flex flex-col justify-start relative">{children}</div>
+      <div className="flex-1 w-full h-full flex flex-col justify-start relative">{children}</div>
     </div>
   );
 }

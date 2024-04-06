@@ -10,10 +10,12 @@ import { sidebarLinks } from "./constants/NavMenuData";
 export default function Sidebar() {
   const { isExpanded, expand, collapse, toggle } = useExpandedState();
   return (
-    <div className="h-screen z-20 no-scrollbar relative sidebar">
+    <div className="h-screen z-20 no-scrollbar absolute md:relative sidebar">
       <TooltipComponent tooltipContent={isExpanded ? "Close sidebar" : "Open sidebar"}>
         <div
-          className={clsx("shadow-md p-2.5 grid place-content-center absolute top-6 -right-6 overflow-hidden bg-white rounded-full cursor-pointer z-[999999]")}
+          className={clsx(
+            "shadow-md p-2.5 grid place-content-center absolute top-6 -right-8 md:-right-6 overflow-hidden bg-white rounded-full cursor-pointer z-[999999]"
+          )}
           onClick={toggle}>
           <Image
             src="/icons/arrows-close.svg"
@@ -21,7 +23,7 @@ export default function Sidebar() {
             width={200}
             height={100}
             draggable={false}
-            className={clsx("w-[24px] h-[24px] transition-all duration-500", isExpanded && "rotate-180")}
+            className={clsx("w-[24px] h-[24px] min-w-[24px] min-h-[24px] transition-all duration-500", isExpanded && "rotate-180")}
             m-2
           />
         </div>
@@ -32,7 +34,10 @@ export default function Sidebar() {
           isExpanded && "!bg-[#EAF0FF] shadow-2xl"
         )}>
         <div
-          className={clsx("box-border h-full transition-all ease-in-out duration-500 w-[320px] absolute lg:relative z-[99999]", !isExpanded && "sm:!w-[98px]")}>
+          className={clsx(
+            "box-border h-full transition-all ease-in-out duration-500 w-[320px]  relative z-[99999] overflow-hidden",
+            !isExpanded && "!w-0 md:!w-[98px]"
+          )}>
           <div className={clsx("w-full h-full min-h-screen flex flex-col justify-between overflow-x-hidden py-4 px-3 no-scrollbar")}>
             <Image src={"/logo/imaginate.svg"} alt="imaginate" height={80} width={80} className={`w-36 max-h-14 !min-w-36`} />{" "}
             <div className={clsx("space-y-3 flex-1 mt-16")}>

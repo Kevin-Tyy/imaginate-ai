@@ -19,6 +19,7 @@ const config = {
         "primary-black": "#191D39",
         "primary-grey": "#918EA4",
         "primary-warning": "#FBA91D",
+        "primary-neutral": "#343434",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

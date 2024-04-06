@@ -64,13 +64,13 @@ export default function MobileSidebar({ onClose, isOpen }: Props) {
               className="flex flex-col items-end justify-center rounded-md transition duration-100 p-2 space-y-[7px] cursor-pointer  group"
               onClick={onClose}>
               <span
-                className={`w-5 relative h-[2px] bg-[#8E93A4] block transition rounded-full duration-[.3s] ${
+                className={`w-5 relative h-[2px] bg-[#8E93A4] block transition rounded-full duration-300 ${
                   isOpen && "rotate-[135deg] translate-y-[9px] w-5"
                 }`}></span>
               <span
-                className={`w-4 relative h-[2px] bg-[#8E93A4] transition  rounded-full duration-[.4s] opacity-100 ${isOpen && "!opacity-0 invisible"} `}></span>
+                className={`w-4 relative h-[2px] bg-[#8E93A4] transition  rounded-full duration-100 opacity-100 ${isOpen && "!opacity-0 invisible"} `}></span>
               <span
-                className={`w-5 relative h-[2px] bg-[#8E93A4] rounded-full transition duration-[.3s] ${
+                className={`w-5 relative h-[2px] bg-[#8E93A4] rounded-full transition duration-300 ${
                   isOpen && "-rotate-[135deg] -translate-y-[9px] w-5"
                 }`}></span>
             </div>

@@ -13,8 +13,8 @@ export default function page() {
   const [currentPlan, setCurrentPlan] = useState<Plan>({ planName: "Starter", planDuration: "Monthly" });
   const [isPlanModalOpen, setIsPlanModalOpen] = useState<boolean>(false);
   return (
-    <div className="px-6 flex flex-col h-full">
-      <div className="flex justify-between pt-8 pb-5 border-b border-[black]/10">
+    <div className="flex flex-col h-full">
+      <div className="flex flex-col md:flex-row justify-between pt-8 pb-5 border-b border-[black]/10">
         <div className="w-full flex gap-x-4 items-center">
           <Link
             href="/app/assets/library"
@@ -30,7 +30,7 @@ export default function page() {
             <span className="text-2xl text-primary-blue font-semibold">Fonts</span>
           </div>
         </div>
-        <button className="border-gradient py-3 px-6 flex items-center gap-2 whitespace-nowrap">
+        <button className="max-w-fit self-end border-gradient py-3 px-6 flex items-center gap-2 whitespace-nowrap">
           <Upload />
           Upload File
         </button>
@@ -38,10 +38,10 @@ export default function page() {
       <main className="flex-1 h-full w-full flex justify-center items-center">
         <div className="w-full flex flex-col items-center mb-40">
           <Image src="/gifs/fonts.gif" alt="" width={240} height={240} className="mix-blend-multiply m-20" />
-          <div className="flex justify-between items-center w-full max-w-5xl">
+          <div className="flex flex-col lg:flex-row gap-8 justify-between items-center w-full max-w-5xl">
             <div className="">
-              <h1 className="text-3xl font-semibold">The right font, always at hand</h1>
-              <p className="max-w-xl leading-loose mt-4">Add custom fonts to your workspace's library and make it easy to access. </p>
+              <h1 className="text-3xl font-semibold text-center lg:text-left">The right font, always at hand</h1>
+              <p className="max-w-xl leading-loose mt-4 text-center lg:text-left">Add custom fonts to your workspace's library and make it easy to access. </p>
             </div>
             <button
               onClick={() => setIsPlanModalOpen(true)}
